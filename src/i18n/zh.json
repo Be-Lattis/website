@@ -124,7 +124,7 @@
   "foot.tag": "Lattis 由 Be Lattis 打造。",
   "foot.contact": "联系",
   "foot.lang": "语言",
-  "foot.rights": "Lattis 免费使用。",
+  "foot.rights": "Lattis 是免费的自由软件。Lattis 和 Be Lattis 的名称与标志保留所有权利。",
   "nav.download": "下载",
   "dl.cta": "下载 Lattis",
   "dl.note": "免费支持 Windows、macOS 和 Linux",
@@ -141,5 +141,9 @@
   "dl.version": "最新版本：",
   "dl.soon": "目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",
   "dl.error": "暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",
-  "dl.none": "在 GitHub 上查看"
+  "dl.none": "在 GitHub 上查看",
+  "foot.licenses": "许可证",
+  "foot.app": "应用程序",
+  "foot.server": "服务器",
+  "foot.site": "网站"
 }

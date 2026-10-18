@@ -124,7 +124,7 @@
   "foot.tag": "Lattis wird von Be Lattis entwickelt.",
   "foot.contact": "Kontakt",
   "foot.lang": "Sprache",
-  "foot.rights": "Lattis ist kostenlos.",
+  "foot.rights": "Lattis ist freie und kostenlose Software. Die Namen und Logos Lattis und Be Lattis bleiben vorbehalten.",
   "nav.download": "Download",
   "dl.cta": "Lattis herunterladen",
   "dl.note": "Kostenlos für Windows, macOS und Linux",
@@ -141,5 +141,9 @@
   "dl.version": "Neueste Version:",
   "dl.soon": "Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",
   "dl.error": "GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",
-  "dl.none": "Auf GitHub ansehen"
+  "dl.none": "Auf GitHub ansehen",
+  "foot.licenses": "Lizenzen",
+  "foot.app": "Anwendung",
+  "foot.server": "Server",
+  "foot.site": "Website"
 }

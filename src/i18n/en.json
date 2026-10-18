@@ -124,7 +124,7 @@
   "foot.tag": "Lattis is made by Be Lattis.",
   "foot.contact": "Contact",
   "foot.lang": "Language",
-  "foot.rights": "Lattis is free to use.",
+  "foot.rights": "Lattis is free and open source software. The Lattis and Be Lattis names and logos are reserved.",
   "nav.download": "Download",
   "dl.cta": "Download Lattis",
   "dl.note": "Free for Windows, macOS and Linux",
@@ -141,5 +141,9 @@
   "dl.version": "Latest release:",
   "dl.soon": "No release published yet. The first one is coming soon: follow the GitHub repository to be notified.",
   "dl.error": "GitHub can't be reached right now. The files are still available on the releases page.",
-  "dl.none": "View on GitHub"
+  "dl.none": "View on GitHub",
+  "foot.licenses": "Licenses",
+  "foot.app": "Application",
+  "foot.server": "Server",
+  "foot.site": "Website"
 }

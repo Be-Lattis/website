@@ -184,10 +184,10 @@ details:not(.lang) p{margin:0 0 20px;color:var(--mut)}
 
 /* Pied de page */
 footer{padding:56px 0 32px;color:var(--mut);font-size:14.5px}
-footer .w{display:grid;grid-template-columns:1fr 2fr;gap:32px}
+footer .w{display:grid;grid-template-columns:1fr 3fr;gap:32px}
 .fbrand img{height:32px;width:auto}
 .fbrand p{margin:12px 0 0}
-.fcols{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.fcols{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
 .fcols div{display:flex;flex-direction:column;gap:8px}
 .fcols strong{color:var(--txt);margin-bottom:4px}
 .fcols a{color:var(--mut);text-decoration:none}
@@ -203,6 +203,7 @@ footer .w{display:grid;grid-template-columns:1fr 2fr;gap:32px}
   .steps,.feats,.feats.three{grid-template-columns:1fr 1fr}
   .pricing{grid-template-columns:1fr}
   .chip{display:none}
+  footer .w{grid-template-columns:1fr}
 }
 @media (max-width:680px){
   section{padding:72px 0}
