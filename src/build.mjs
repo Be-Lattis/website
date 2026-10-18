@@ -18,8 +18,8 @@ for (const l of langs) {
   if (miss.length) throw new Error(`${l}: clés manquantes ${miss.join(', ')}`);
 }
 
-const alternates = langs.map(l => `<link rel="alternate" hreflang="${l}" href="https://lattis.be/${path(l)}">`)
-  .concat(`<link rel="alternate" hreflang="x-default" href="https://lattis.be/">`).join('\n');
+const alternates = langs.map(l => `<link rel="alternate" hreflang="${l}" href="https://www.lattis.be/${path(l)}">`)
+  .concat(`<link rel="alternate" hreflang="x-default" href="https://www.lattis.be/">`).join('\n');
 
 // Sur la page par défaut, renvoie vers la langue du navigateur au premier passage seulement.
 const redirect = `<script>(function(){try{var s=localStorage.getItem('lattis-lang');if(s)return;var n=(navigator.language||'').slice(0,2).toLowerCase();if(['en','zh','es','de'].indexOf(n)>=0)location.replace(n+'/'+location.hash)}catch(e){}})();</script>`;

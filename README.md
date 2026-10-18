@@ -1,6 +1,6 @@
 # Site public de Lattis
 
-Site statique publié sur https://lattis.be par GitHub Pages (`.github/workflows/pages.yml`).
+Site statique publié sur https://www.lattis.be par GitHub Pages (`.github/workflows/pages.yml`).
 
 Le site existe en cinq langues : français (racine), anglais (`en/`), chinois (`zh/`), espagnol (`es/`) et allemand (`de/`). Les pages `index.html` sont générées, ne pas les modifier à la main :
 
