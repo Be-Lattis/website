@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lattis：拥有数据库严谨性的免费电子表格</title>
+<meta name="description" content="Lattis 是一款免费、本地优先的桌面电子表格：兼具 Excel 的灵活与 SQLite 数据库的严谨，支持 SQL、Lua 脚本，并可连接您的数据库。">
+<link rel="canonical" href="https://lattis.be/zh/">
+<link rel="alternate" hreflang="fr" href="https://lattis.be/">
+<link rel="alternate" hreflang="en" href="https://lattis.be/en/">
+<link rel="alternate" hreflang="zh" href="https://lattis.be/zh/">
+<link rel="alternate" hreflang="es" href="https://lattis.be/es/">
+<link rel="alternate" hreflang="de" href="https://lattis.be/de/">
+<link rel="alternate" hreflang="x-default" href="https://lattis.be/">
+<meta property="og:title" content="Lattis：拥有数据库严谨性的免费电子表格">
+<meta property="og:description" content="Lattis 是一款免费、本地优先的桌面电子表格：兼具 Excel 的灵活与 SQLite 数据库的严谨，支持 SQL、Lua 脚本，并可连接您的数据库。">
+<meta property="og:image" content="https://lattis.be/assets/11-demo-ouverture.png">
+<meta property="og:locale" content="zh_CN">
+<meta name="theme-color" content="#217346">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-fx" viewBox="0 0 24 24"><path d="M14 4h-2a3 3 0 0 0-3 3v13M6 11h7M15 12l5 6M20 12l-5 6"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="i-pivot" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M13 13h4v4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16M7 16v-4M12 16V7M17 16v-7"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9-9.5C2 6.9 4.3 4 7.5 4c2 0 3.5 1.2 4.5 2.7C13 5.2 14.5 4 16.5 4 19.7 4 22 6.9 21 10.5 19.5 15.4 12 20 12 20z"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M3 12l4-4 4 2 3-3 7 6-5 5-3-2-2 2-3-1zM7 8l7 7"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></symbol>
+<symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+</svg>
+
+<header class="top"><div class="w">
+<a class="brand" href="../zh/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
+<nav class="nav">
+<a href="#comment">原理</a><a href="#fonctions">功能</a><a href="#demo">演示</a><a href="#gratuit">免费</a><a href="#faq">常见问题</a>
+</nav>
+<div class="tools">
+<details class="lang"><summary aria-label="语言"><svg class="ico"><use href="#i-globe"/></svg><span>ZH</span></summary>
+<div class="menu"><a href="../" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="../en/" hreflang="en" lang="en" data-lang="en">English</a><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh" aria-current="true">简体中文</a><a href="../es/" hreflang="es" lang="es" data-lang="es">Español</a><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></div></details>
+<a class="btn sm" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg><span>GitHub</span></a>
+</div>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="w">
+<span class="badge"><span class="dot"></span>人人免费 · 持续开发中</span>
+<h1>电子表格的灵活。<br><span class="accent">数据库的严谨。</span></h1>
+<p class="sub">Lattis 是一款现代、快速的桌面电子表格。您像在 Excel 中一样输入，它会把数据存入真正的 SQLite 表，保存在您自己的电脑上。而且它对所有人永久免费。</p>
+<div class="ctas">
+<a class="btn" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>关注项目</a>
+<a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>观看演示</a>
+</div>
+<div class="stage">
+<div class="window">
+<div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
+<img src="../assets/11-demo-ouverture.png" alt="Lattis 截图：同一工作表中的多个表格" width="1440" height="860">
+</div>
+<div class="chip c1"><svg class="ico"><use href="#i-grid"/></svg>已识别表格：客户</div>
+<div class="chip c2"><svg class="ico"><use href="#i-db"/></svg><code>GROUP BY</code> 一键完成</div>
+</div>
+</div>
+</section>
+
+<div class="strip"><div class="w">
+<span><svg class="ico"><use href="#i-heart"/></svg>完全免费</span>
+<span><svg class="ico"><use href="#i-lock"/></svg>数据留在您身边</span>
+<span><svg class="ico"><use href="#i-grid"/></svg>Windows、macOS 和 Linux</span>
+<span><svg class="ico"><use href="#i-check"/></svg>延续 Excel 的使用习惯</span>
+</div></div>
+
+<section id="comment"><div class="w">
+<p class="kicker">工作原理</p>
+<h2>读得懂数据的电子表格</h2>
+<p class="lead">无需绘制数据结构，也无需跟随向导。Lattis 观察您的输入，替您完成数据库的工作。</p>
+<div class="steps">
+<div class="step">
+<div class="ill">
+<table class="mini"><tr><td>编号</td><td>姓名</td><td>城市</td></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon<span class="caret"></span></td></tr></table>
+</div>
+<span class="num">1</span><h3>自由输入</h3><p>在画布上任意位置输入数据，就像在任何电子表格中一样。输入永远不会被打断。</p>
+</div>
+<div class="step">
+<div class="ill">
+<table class="mini on"><tr><th>编号 <small>🔑</small></th><th>姓名 <small>Abc</small></th><th>城市 <small>Abc</small></th></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon</td></tr></table>
+<span class="tag">表「客户」· 编号列唯一键</span>
+</div>
+<span class="num">2</span><h3>Lattis 识别表格</h3><p>它会找到数据区域，突出显示表头，推断每一列的类型，并创建对应的 SQLite 表。</p>
+</div>
+<div class="step">
+<div class="ill code">
+<pre><b>SELECT</b> 城市, <b>COUNT</b>(*)
+<b>FROM</b> 客户
+<b>GROUP BY</b> 城市;</pre>
+<table class="mini res"><tr><th>城市</th><th>n</th></tr><tr><td>Lyon</td><td>2</td></tr><tr><td>Paris</td><td>1</td></tr></table>
+</div>
+<span class="num">3</span><h3>查询与分析</h3><p>您的表格就是真正的数据表：SQL、公式、数据透视表和图表都直接运行在引擎之上。</p>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="demo"><div class="w">
+<p class="kicker">演示</p>
+<h2>看看 Lattis 如何工作</h2>
+<p class="lead">用几段短视频了解核心功能。视频将随首批公开版本一同发布。</p>
+<div class="video main" role="img" aria-label="两分钟了解 Lattis (视频即将上线)">
+<div class="vgrid" aria-hidden="true"></div>
+<span class="play"><svg><use href="#i-play"/></svg></span>
+<strong>两分钟了解 Lattis</strong><em>视频即将上线</em>
+</div>
+<div class="vids">
+<div class="video" role="img" aria-label="快速入门 (视频即将上线)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>快速入门</strong><em>视频即将上线</em></div>
+<div class="video" role="img" aria-label="SQL 与数据透视表 (视频即将上线)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>SQL 与数据透视表</strong><em>视频即将上线</em></div>
+<div class="video" role="img" aria-label="连接数据库 (视频即将上线)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>连接数据库</strong><em>视频即将上线</em></div>
+</div>
+</div></section>
+
+<section id="fonctions"><div class="w">
+<p class="kicker">功能</p>
+<h2>分析所需，一应俱全</h2>
+<p class="lead">Excel 最常用的功能，由 SQLite 提供动力。</p>
+<div class="feats">
+<div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>无限画布</h3><p>每个工作表可容纳多个独立表格，各自带有细边框。若表格从 A1 开始，工作表标签将采用它的名称。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>强类型列</h3><p>文本、整数、小数、日期、布尔值。类型在输入时自动识别，从不阻碍输入，并可随时修改。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-lock"/></svg><h3>本地优先</h3><p>一切都保存在一个 <code>.lattis</code> 文件中，便于发送或归档，并支持崩溃后恢复。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-fx"/></svg><h3>熟悉的公式</h3><p>类似 Excel 的公式语言，支持 <code>客户[城市]</code> 这样的结构化引用。VLOOKUP 会自动转换为 REFERENCE。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>SQL 标签页</h3><p>用 SQL 查询和修改表格，工作簿中的所有对象一目了然。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-code"/></svg><h3>Lua 脚本</h3><p>通过 <code>db.query()</code> 和事件实现自动化。内置保护机制会中断死循环，界面永不卡死。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-pivot"/></svg><h3>数据透视表</h3><p>借助引擎原生的 GROUP BY 即时聚合，以树形结构呈现。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-chart"/></svg><h3>图表与文档</h3><p>由数据驱动的图表，以及用于排版分析结果的文档标签页。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-spark"/></svg><h3>AI 助手（可选）</h3><p>助手标签页默认关闭，可接入您自己的密钥或账户。</p></div>
+</div>
+
+<div class="show">
+<div class="shot"><img src="../assets/19-sql-resultat.png" alt="Lattis 的 SQL 标签页，以网格形式显示结果" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">SQL</p><h3>SQL 与网格，并排呈现</h3><p>在 SQL 标签页中执行 GROUP BY，结果即以网格显示，可排序、筛选并再次使用。</p></div>
+</div>
+<div class="show rev">
+<div class="shot"><img src="../assets/15-analyse.png" alt="Lattis 中的数据透视表和图表" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">分析</p><h3>零等待分析</h3><p>数据透视表和图表基于 SQLite 的原生聚合，数据一变化就会立即更新。</p></div>
+</div>
+<div class="show">
+<div class="video" role="img" aria-label="用 Lua 自动化 (视频即将上线)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>用 Lua 自动化</strong><em>视频即将上线</em></div>
+<div><p class="kicker">Lua</p><h3>用 Lua 自动化</h3><p>简单而安全的 API，可在后台处理表格，并提供内置参考和输入时的提示。</p>
+<pre class="snippet"><b>for</b> row <b>in</b> db.rows(<i>"SELECT _id, Prix FROM Produits"</i>) <b>do</b>
+  db.update(<i>"Produits"</i>, row._id, { Prix = row.Prix * 1.03 })
+<b>end</b></pre></div>
+</div>
+</div></section>
+
+<section class="alt" id="connexions"><div class="w">
+<p class="kicker">连接</p>
+<h2>连接您的数据库</h2>
+<p class="lead">像 Power Query 一样导入并刷新外部数据。密码保存在您电脑的钥匙串中。</p>
+<div class="logos"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL Server</span><span>SQLite</span><span>REST / JSON</span><span>Parquet</span></div>
+<div class="feats three">
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>关系型数据库</h3><p>PostgreSQL、MySQL 与 MariaDB、SQL Server、SQLite。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-plug"/></svg><h3>API 与文件</h3><p>JSON REST API，Parquet 与 JSON 文件。</p></div>
+<div class="feat soon"><svg class="fi"><use href="#i-users"/></svg><h3>多人协作（研究中）</h3><p>基于 PostgreSQL 的「Lattis 服务器」，支持角色与权限。该功能仍在设计中，尚未提供。</p></div>
+</div>
+</div></section>
+
+<section id="gratuit"><div class="w">
+<p class="kicker">价格</p>
+<h2>免费，面向所有人。</h2>
+<p class="lead">没有专业版，没有订阅，没有行数限制。Lattis 对个人和企业都免费，并将一直免费。</p>
+<div class="pricing">
+<div class="plan">
+<p class="pname">Lattis</p>
+<p class="amount">¥0</p>
+<p class="per">永久免费</p>
+<ul>
+<li><svg class="ico"><use href="#i-check"/></svg>全部功能，无阉割版本</li>
+<li><svg class="ico"><use href="#i-check"/></svg>个人与商业用途均可</li>
+<li><svg class="ico"><use href="#i-check"/></svg>无需注册账户</li>
+<li><svg class="ico"><use href="#i-check"/></svg>数据保存在您自己的电脑上</li>
+<li><svg class="ico"><use href="#i-check"/></svg>包含所有更新</li>
+</ul>
+<a class="btn wide" href="https://github.com/Be-Lattis/lattis-app">关注版本发布</a>
+</div>
+<div class="fund">
+<h3>那么，谁来资助 Lattis？</h3>
+<p class="fsub">软件之所以能对所有人免费，是因为从中获益最多的人以其他方式做出贡献。</p>
+<div class="fgrid">
+<div><svg class="fi"><use href="#i-heart"/></svg><h4>企业捐赠</h4><p>日常使用 Lattis 的企业可以通过捐赠支持其开发。</p></div>
+<div><svg class="fi"><use href="#i-hand"/></svg><h4>合作与赞助</h4><p>合作伙伴资助特定功能或支持产品路线图，全程公开透明。</p></div>
+<div><svg class="fi"><use href="#i-cap"/></svg><h4>培训</h4><p>提供 Lattis、SQL 及 Lua 自动化培训，面向团队或个人。</p></div>
+<div><svg class="fi"><use href="#i-compass"/></svg><h4>企业服务</h4><p>协助部署、从 Excel 迁移、连接数据库以及定制脚本。</p></div>
+</div>
+<a class="btn ghost" href="mailto:contact@lattis.be?subject=Lattis">支持 Lattis 或联系我们</a>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w narrow">
+<h2>常见问题</h2>
+<details><summary>Lattis 真的免费吗？</summary><p>是的。所有功能均免费，个人和商业用途皆可，没有订阅，也没有专业版。项目依靠企业捐赠、合作伙伴、培训和企业服务维持。</p></details>
+<details><summary>我的数据存放在哪里？</summary><p>在您的电脑上。每个工作簿是一个包含 SQLite 数据库的 <code>.lattis</code> 文件。除非您主动连接外部数据库，否则不会有任何数据发送到服务器。</p></details>
+<details><summary>我还能沿用 Excel 的习惯吗？</summary><p>可以：功能区、右键菜单、快捷键、撤销与重做、熟悉的公式。VLOOKUP 甚至会自动转换为 REFERENCE。</p></details>
+<details><summary>Lattis 支持哪些系统？</summary><p>Windows、macOS 和 Linux。它是用 Go、Wails 和 SvelteKit 构建的原生应用，没有 Electron 的臃肿。</p></details>
+<details><summary>什么时候可以试用？</summary><p>Lattis 正在积极开发中。关注 GitHub 仓库，即可第一时间获知首批公开版本。</p></details>
+<details><summary>我的公司可以提供帮助吗？</summary><p>非常欢迎：可以通过捐赠、合作、团队培训或定制服务。请发邮件至 contact@lattis.be。</p></details>
+</div></section>
+
+<section class="final"><div class="w">
+<img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
+<h2>准备好让表格更严谨了吗？</h2>
+<p>关注项目，成为首批体验 Lattis 的用户。</p>
+<a class="btn light" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>在 GitHub 上关注 Lattis</a>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="fbrand">
+<img class="light" src="../assets/be-lattis-logo-clair.svg" alt="Be Lattis" height="28"><img class="dark" src="../assets/be-lattis-logo-sombre.svg" alt="Be Lattis" height="28">
+<p>Lattis 由 Be Lattis 打造。</p>
+</div>
+<div class="fcols">
+<div><strong>Lattis</strong><a href="#fonctions">功能</a><a href="#demo">演示</a><a href="#gratuit">免费</a><a href="#faq">常见问题</a></div>
+<div><strong>联系</strong><a href="https://github.com/Be-Lattis/lattis-app">GitHub</a><a href="mailto:contact@lattis.be">contact@lattis.be</a></div>
+<div><strong>语言</strong><a href="../" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="../en/" hreflang="en" lang="en" data-lang="en">English</a><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh" aria-current="true">简体中文</a><a href="../es/" hreflang="es" lang="es" data-lang="es">Español</a><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></div>
+</div>
+<p class="copy">© 2026 Be Lattis · Lattis 免费使用。</p>
+</div></footer>
+<script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
+</body>
+</html>

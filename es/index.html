@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lattis, la hoja de cálculo gratuita con el rigor de una base de datos</title>
+<meta name="description" content="Lattis es una hoja de cálculo de escritorio gratuita y local-first: la flexibilidad de Excel, el rigor de una base SQLite, SQL, scripts Lua y conexiones a tus bases de datos.">
+<link rel="canonical" href="https://lattis.be/es/">
+<link rel="alternate" hreflang="fr" href="https://lattis.be/">
+<link rel="alternate" hreflang="en" href="https://lattis.be/en/">
+<link rel="alternate" hreflang="zh" href="https://lattis.be/zh/">
+<link rel="alternate" hreflang="es" href="https://lattis.be/es/">
+<link rel="alternate" hreflang="de" href="https://lattis.be/de/">
+<link rel="alternate" hreflang="x-default" href="https://lattis.be/">
+<meta property="og:title" content="Lattis, la hoja de cálculo gratuita con el rigor de una base de datos">
+<meta property="og:description" content="Lattis es una hoja de cálculo de escritorio gratuita y local-first: la flexibilidad de Excel, el rigor de una base SQLite, SQL, scripts Lua y conexiones a tus bases de datos.">
+<meta property="og:image" content="https://lattis.be/assets/11-demo-ouverture.png">
+<meta property="og:locale" content="es_ES">
+<meta name="theme-color" content="#217346">
+<link rel="icon" type="image/svg+xml" href="../favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="../style.css">
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-fx" viewBox="0 0 24 24"><path d="M14 4h-2a3 3 0 0 0-3 3v13M6 11h7M15 12l5 6M20 12l-5 6"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="i-pivot" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M13 13h4v4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16M7 16v-4M12 16V7M17 16v-7"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9-9.5C2 6.9 4.3 4 7.5 4c2 0 3.5 1.2 4.5 2.7C13 5.2 14.5 4 16.5 4 19.7 4 22 6.9 21 10.5 19.5 15.4 12 20 12 20z"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M3 12l4-4 4 2 3-3 7 6-5 5-3-2-2 2-3-1zM7 8l7 7"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></symbol>
+<symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+</svg>
+
+<header class="top"><div class="w">
+<a class="brand" href="../es/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
+<nav class="nav">
+<a href="#comment">Cómo funciona</a><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a>
+</nav>
+<div class="tools">
+<details class="lang"><summary aria-label="Idioma"><svg class="ico"><use href="#i-globe"/></svg><span>ES</span></summary>
+<div class="menu"><a href="../" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="../en/" hreflang="en" lang="en" data-lang="en">English</a><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh">简体中文</a><a href="../es/" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></div></details>
+<a class="btn sm" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg><span>GitHub</span></a>
+</div>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="w">
+<span class="badge"><span class="dot"></span>Gratis para todos · En desarrollo activo</span>
+<h1>La flexibilidad de una hoja de cálculo.<br><span class="accent">El rigor de una base de datos.</span></h1>
+<p class="sub">Lattis es una hoja de cálculo de escritorio moderna y rápida. Escribes como en Excel y guarda tus datos en tablas SQLite reales, en tu propio ordenador. Y sigue siendo gratis, para todo el mundo.</p>
+<div class="ctas">
+<a class="btn" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir el proyecto</a>
+<a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Ver la demo</a>
+</div>
+<div class="stage">
+<div class="window">
+<div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
+<img src="../assets/11-demo-ouverture.png" alt="Captura de Lattis: varias tablas en una misma hoja" width="1440" height="860">
+</div>
+<div class="chip c1"><svg class="ico"><use href="#i-grid"/></svg>Tabla detectada: Clientes</div>
+<div class="chip c2"><svg class="ico"><use href="#i-db"/></svg><code>GROUP BY</code> con un clic</div>
+</div>
+</div>
+</section>
+
+<div class="strip"><div class="w">
+<span><svg class="ico"><use href="#i-heart"/></svg>100 % gratis</span>
+<span><svg class="ico"><use href="#i-lock"/></svg>Tus datos se quedan contigo</span>
+<span><svg class="ico"><use href="#i-grid"/></svg>Windows, macOS y Linux</span>
+<span><svg class="ico"><use href="#i-check"/></svg>Los hábitos de Excel</span>
+</div></div>
+
+<section id="comment"><div class="w">
+<p class="kicker">Cómo funciona</p>
+<h2>Una hoja de cálculo que entiende tus datos</h2>
+<p class="lead">Sin esquemas que dibujar ni asistentes que seguir. Lattis observa lo que escribes y hace el trabajo de la base de datos por ti.</p>
+<div class="steps">
+<div class="step">
+<div class="ill">
+<table class="mini"><tr><td>Código</td><td>Nombre</td><td>Ciudad</td></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon<span class="caret"></span></td></tr></table>
+</div>
+<span class="num">1</span><h3>Escribe libremente</h3><p>Introduce tus datos en cualquier parte del lienzo, como en cualquier hoja de cálculo. Nada bloquea la escritura.</p>
+</div>
+<div class="step">
+<div class="ill">
+<table class="mini on"><tr><th>Código <small>🔑</small></th><th>Nombre <small>Abc</small></th><th>Ciudad <small>Abc</small></th></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon</td></tr></table>
+<span class="tag">Tabla «Clientes» · clave única en Código</span>
+</div>
+<span class="num">2</span><h3>Lattis detecta la tabla</h3><p>Localiza el bloque de datos, resalta el encabezado, deduce el tipo de cada columna y crea la tabla SQLite correspondiente.</p>
+</div>
+<div class="step">
+<div class="ill code">
+<pre><b>SELECT</b> Ciudad, <b>COUNT</b>(*)
+<b>FROM</b> Clientes
+<b>GROUP BY</b> Ciudad;</pre>
+<table class="mini res"><tr><th>Ciudad</th><th>n</th></tr><tr><td>Lyon</td><td>2</td></tr><tr><td>Paris</td><td>1</td></tr></table>
+</div>
+<span class="num">3</span><h3>Consulta y analiza</h3><p>Tus tablas son tablas de verdad: SQL, fórmulas, tablas dinámicas y gráficos trabajan directamente sobre el motor.</p>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="demo"><div class="w">
+<p class="kicker">Demo</p>
+<h2>Mira Lattis en acción</h2>
+<p class="lead">Vídeos cortos para descubrir lo esencial. Llegarán con las primeras versiones públicas.</p>
+<div class="video main" role="img" aria-label="Lattis en 2 minutos (Vídeo disponible próximamente)">
+<div class="vgrid" aria-hidden="true"></div>
+<span class="play"><svg><use href="#i-play"/></svg></span>
+<strong>Lattis en 2 minutos</strong><em>Vídeo disponible próximamente</em>
+</div>
+<div class="vids">
+<div class="video" role="img" aria-label="Primeros pasos (Vídeo disponible próximamente)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>Primeros pasos</strong><em>Vídeo disponible próximamente</em></div>
+<div class="video" role="img" aria-label="SQL y tablas dinámicas (Vídeo disponible próximamente)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>SQL y tablas dinámicas</strong><em>Vídeo disponible próximamente</em></div>
+<div class="video" role="img" aria-label="Conectar una base de datos (Vídeo disponible próximamente)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>Conectar una base de datos</strong><em>Vídeo disponible próximamente</em></div>
+</div>
+</div></section>
+
+<section id="fonctions"><div class="w">
+<p class="kicker">Funciones</p>
+<h2>Todo lo necesario para analizar</h2>
+<p class="lead">Las funciones más usadas de Excel, impulsadas por SQLite.</p>
+<div class="feats">
+<div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>Lienzo infinito</h3><p>Varias tablas independientes por hoja, cada una enmarcada por un borde fino. Si una empieza en A1, la pestaña toma su nombre.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>Columnas tipadas</h3><p>Texto, entero, decimal, fecha, booleano. El tipo se detecta mientras escribes, nunca te bloquea y siempre se puede cambiar.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-lock"/></svg><h3>Local-first</h3><p>Todo cabe en un único archivo <code>.lattis</code>, fácil de enviar o archivar, con recuperación tras un cierre inesperado.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-fx"/></svg><h3>Fórmulas conocidas</h3><p>Un lenguaje parecido al de Excel, con referencias estructuradas como <code>Clientes[Ciudad]</code>. BUSCARV se convierte en REFERENCE.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>Pestaña SQL</h3><p>Consulta y modifica tus tablas en SQL, con todos los objetos del libro a la vista.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-code"/></svg><h3>Scripts Lua</h3><p>Automatiza con <code>db.query()</code> y eventos. Un mecanismo de seguridad detiene los bucles infinitos: la interfaz nunca se congela.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-pivot"/></svg><h3>Tablas dinámicas</h3><p>Agregaciones instantáneas gracias al GROUP BY nativo del motor, presentadas en árbol.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-chart"/></svg><h3>Gráficos y documentos</h3><p>Gráficos alimentados por tus datos y pestañas Documento para maquetar tus análisis.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-spark"/></svg><h3>Asistente de IA, si lo quieres</h3><p>Una pestaña Asistente desactivada por defecto, que puedes conectar a tu propia clave o cuenta.</p></div>
+</div>
+
+<div class="show">
+<div class="shot"><img src="../assets/19-sql-resultat.png" alt="Pestaña SQL de Lattis con un resultado en forma de cuadrícula" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">SQL</p><h3>SQL y cuadrícula, lado a lado</h3><p>Un GROUP BY en la pestaña SQL y el resultado aparece como una cuadrícula que puedes ordenar, filtrar y reutilizar.</p></div>
+</div>
+<div class="show rev">
+<div class="shot"><img src="../assets/15-analyse.png" alt="Tabla dinámica y gráfico en Lattis" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">Análisis</p><h3>Análisis sin esperas</h3><p>Las tablas dinámicas y los gráficos se apoyan en la agregación nativa de SQLite. Se actualizan en cuanto cambian tus datos.</p></div>
+</div>
+<div class="show">
+<div class="video" role="img" aria-label="Automatizar con Lua (Vídeo disponible próximamente)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>Automatizar con Lua</strong><em>Vídeo disponible próximamente</em></div>
+<div><p class="kicker">Lua</p><h3>Automatizar con Lua</h3><p>Una API sencilla y segura para trabajar con tus tablas en segundo plano, con referencia integrada y avisos mientras escribes.</p>
+<pre class="snippet"><b>for</b> row <b>in</b> db.rows(<i>"SELECT _id, Prix FROM Produits"</i>) <b>do</b>
+  db.update(<i>"Produits"</i>, row._id, { Prix = row.Prix * 1.03 })
+<b>end</b></pre></div>
+</div>
+</div></section>
+
+<section class="alt" id="connexions"><div class="w">
+<p class="kicker">Conexiones</p>
+<h2>Conectado a tus bases de datos</h2>
+<p class="lead">Importa y actualiza datos externos, al estilo de Power Query. Las contraseñas se quedan en el llavero de tu ordenador.</p>
+<div class="logos"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL Server</span><span>SQLite</span><span>REST / JSON</span><span>Parquet</span></div>
+<div class="feats three">
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>Bases relacionales</h3><p>PostgreSQL, MySQL y MariaDB, SQL Server, SQLite.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-plug"/></svg><h3>API y archivos</h3><p>API REST en JSON, archivos Parquet y JSON.</p></div>
+<div class="feat soon"><svg class="fi"><use href="#i-users"/></svg><h3>Trabajo en equipo (en estudio)</h3><p>Un «Servidor Lattis» sobre PostgreSQL, con roles y permisos. Esta función está en diseño y todavía no está disponible.</p></div>
+</div>
+</div></section>
+
+<section id="gratuit"><div class="w">
+<p class="kicker">Precio</p>
+<h2>Gratis. Para todo el mundo.</h2>
+<p class="lead">Sin versión Pro, sin suscripción, sin límite de filas. Lattis es gratis tanto para particulares como para empresas, y seguirá siéndolo.</p>
+<div class="pricing">
+<div class="plan">
+<p class="pname">Lattis</p>
+<p class="amount">0 €</p>
+<p class="per">para siempre</p>
+<ul>
+<li><svg class="ico"><use href="#i-check"/></svg>Todas las funciones, sin versión recortada</li>
+<li><svg class="ico"><use href="#i-check"/></svg>Uso personal y profesional</li>
+<li><svg class="ico"><use href="#i-check"/></svg>Sin necesidad de crear una cuenta</li>
+<li><svg class="ico"><use href="#i-check"/></svg>Tus datos se quedan en tu equipo</li>
+<li><svg class="ico"><use href="#i-check"/></svg>Actualizaciones incluidas</li>
+</ul>
+<a class="btn wide" href="https://github.com/Be-Lattis/lattis-app">Seguir las versiones</a>
+</div>
+<div class="fund">
+<h3>Entonces, ¿quién financia Lattis?</h3>
+<p class="fsub">El programa es gratis para todos porque quienes más valor obtienen de él contribuyen de otras formas.</p>
+<div class="fgrid">
+<div><svg class="fi"><use href="#i-heart"/></svg><h4>Donaciones de empresas</h4><p>Las empresas que usan Lattis a diario pueden apoyar su desarrollo con una donación.</p></div>
+<div><svg class="fi"><use href="#i-hand"/></svg><h4>Alianzas y patrocinadores</h4><p>Los socios financian funciones concretas o respaldan la hoja de ruta, con total transparencia.</p></div>
+<div><svg class="fi"><use href="#i-cap"/></svg><h4>Formación</h4><p>Cursos para dominar Lattis, SQL o la automatización con Lua, en equipo o de forma individual.</p></div>
+<div><svg class="fi"><use href="#i-compass"/></svg><h4>Acompañamiento a empresas</h4><p>Ayuda con el despliegue, la migración desde Excel, la conexión a tus bases de datos y scripts a medida.</p></div>
+</div>
+<a class="btn ghost" href="mailto:contact@lattis.be?subject=Lattis">Apoyar Lattis o contactarnos</a>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w narrow">
+<h2>Preguntas frecuentes</h2>
+<details><summary>¿Lattis es realmente gratis?</summary><p>Sí. Todas las funciones son gratuitas, para uso personal y profesional, sin suscripción ni versión Pro. El proyecto se financia con donaciones de empresas, alianzas, formación y acompañamiento.</p></details>
+<details><summary>¿Dónde se guardan mis datos?</summary><p>En tu ordenador. Un libro es un archivo <code>.lattis</code> que contiene una base SQLite. Nada se envía a un servidor, salvo que tú conectes una base externa.</p></details>
+<details><summary>¿Conservo mis hábitos de Excel?</summary><p>Sí: cinta de opciones, menús contextuales, atajos, deshacer y rehacer, fórmulas conocidas. BUSCARV incluso se convierte automáticamente en REFERENCE.</p></details>
+<details><summary>¿En qué sistemas funciona Lattis?</summary><p>Windows, macOS y Linux. Es una aplicación nativa hecha en Go con Wails y SvelteKit, sin el peso de Electron.</p></details>
+<details><summary>¿Cuándo puedo probarlo?</summary><p>Lattis está en desarrollo activo. Sigue el repositorio de GitHub para enterarte de las primeras versiones públicas.</p></details>
+<details><summary>¿Puede ayudar mi empresa?</summary><p>Con gusto: con una donación, una alianza, formación para tus equipos o un acompañamiento a medida. Escríbenos a contact@lattis.be.</p></details>
+</div></section>
+
+<section class="final"><div class="w">
+<img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
+<h2>¿Listo para dar rigor a tus hojas de cálculo?</h2>
+<p>Sigue el proyecto y sé de los primeros en probar Lattis.</p>
+<a class="btn light" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir Lattis en GitHub</a>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="fbrand">
+<img class="light" src="../assets/be-lattis-logo-clair.svg" alt="Be Lattis" height="28"><img class="dark" src="../assets/be-lattis-logo-sombre.svg" alt="Be Lattis" height="28">
+<p>Lattis es un proyecto de Be Lattis.</p>
+</div>
+<div class="fcols">
+<div><strong>Lattis</strong><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a></div>
+<div><strong>Contacto</strong><a href="https://github.com/Be-Lattis/lattis-app">GitHub</a><a href="mailto:contact@lattis.be">contact@lattis.be</a></div>
+<div><strong>Idioma</strong><a href="../" hreflang="fr" lang="fr" data-lang="fr">Français</a><a href="../en/" hreflang="en" lang="en" data-lang="en">English</a><a href="../zh/" hreflang="zh" lang="zh" data-lang="zh">简体中文</a><a href="../es/" hreflang="es" lang="es" data-lang="es" aria-current="true">Español</a><a href="../de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></div>
+</div>
+<p class="copy">© 2026 Be Lattis · Lattis es gratuito.</p>
+</div></footer>
+<script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
+</body>
+</html>

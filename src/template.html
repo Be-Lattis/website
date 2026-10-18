@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{meta.title}}</title>
+<meta name="description" content="{{meta.desc}}">
+<link rel="canonical" href="https://lattis.be/{{path}}">
+{{alternates}}
+<meta property="og:title" content="{{meta.title}}">
+<meta property="og:description" content="{{meta.desc}}">
+<meta property="og:image" content="https://lattis.be/assets/11-demo-ouverture.png">
+<meta property="og:locale" content="{{locale}}">
+<meta name="theme-color" content="#217346">
+<link rel="icon" type="image/svg+xml" href="{{base}}favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="{{base}}style.css">
+{{redirect}}
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-grid" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M3 15h18M9 3v18M15 3v18"/></symbol>
+<symbol id="i-type" viewBox="0 0 24 24"><path d="M4 7V5h16v2M9 19h6M12 5v14"/></symbol>
+<symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+<symbol id="i-fx" viewBox="0 0 24 24"><path d="M14 4h-2a3 3 0 0 0-3 3v13M6 11h7M15 12l5 6M20 12l-5 6"/></symbol>
+<symbol id="i-db" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></symbol>
+<symbol id="i-code" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></symbol>
+<symbol id="i-pivot" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 3v18M13 13h4v4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20h16M7 16v-4M12 16V7M17 16v-7"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M6 18l2.5-2.5M15.5 8.5 18 6"/></symbol>
+<symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4"/></symbol>
+<symbol id="i-cloud" viewBox="0 0 24 24"><path d="M7 18a5 5 0 1 1 1-9.9A6 6 0 0 1 19.5 10 4 4 0 0 1 18 18z"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6.5 6.5 0 0 1 3.5 6"/></symbol>
+<symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-9-9.5C2 6.9 4.3 4 7.5 4c2 0 3.5 1.2 4.5 2.7C13 5.2 14.5 4 16.5 4 19.7 4 22 6.9 21 10.5 19.5 15.4 12 20 12 20z"/></symbol>
+<symbol id="i-hand" viewBox="0 0 24 24"><path d="M3 12l4-4 4 2 3-3 7 6-5 5-3-2-2 2-3-1zM7 8l7 7"/></symbol>
+<symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5zM6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/></symbol>
+<symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
+<symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></symbol>
+<symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
+</svg>
+
+<header class="top"><div class="w">
+<a class="brand" href="{{base}}{{path}}"><img src="{{base}}assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
+<nav class="nav">
+<a href="#comment">{{nav.how}}</a><a href="#fonctions">{{nav.features}}</a><a href="#demo">{{nav.video}}</a><a href="#gratuit">{{nav.pricing}}</a><a href="#faq">{{nav.faq}}</a>
+</nav>
+<div class="tools">
+<details class="lang"><summary aria-label="{{foot.lang}}"><svg class="ico"><use href="#i-globe"/></svg><span>{{langCode}}</span></summary>
+<div class="menu">{{langMenu}}</div></details>
+<a class="btn sm" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg><span>{{nav.cta}}</span></a>
+</div>
+</div></header>
+
+<main>
+<section class="hero">
+<div class="bg-grid" aria-hidden="true"></div>
+<div class="w">
+<span class="badge"><span class="dot"></span>{{hero.badge}}</span>
+<h1>{{hero.title1}}<br><span class="accent">{{hero.title2}}</span></h1>
+<p class="sub">{{hero.sub}}</p>
+<div class="ctas">
+<a class="btn" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>{{hero.cta1}}</a>
+<a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>{{hero.cta2}}</a>
+</div>
+<div class="stage">
+<div class="window">
+<div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
+<img src="{{base}}assets/11-demo-ouverture.png" alt="{{hero.alt}}" width="1440" height="860">
+</div>
+<div class="chip c1"><svg class="ico"><use href="#i-grid"/></svg>{{hero.chip1}}</div>
+<div class="chip c2"><svg class="ico"><use href="#i-db"/></svg><code>GROUP BY</code> {{hero.chip2}}</div>
+</div>
+</div>
+</section>
+
+<div class="strip"><div class="w">
+<span><svg class="ico"><use href="#i-heart"/></svg>{{strip.1}}</span>
+<span><svg class="ico"><use href="#i-lock"/></svg>{{strip.2}}</span>
+<span><svg class="ico"><use href="#i-grid"/></svg>{{strip.3}}</span>
+<span><svg class="ico"><use href="#i-check"/></svg>{{strip.4}}</span>
+</div></div>
+
+<section id="comment"><div class="w">
+<p class="kicker">{{how.kicker}}</p>
+<h2>{{how.title}}</h2>
+<p class="lead">{{how.sub}}</p>
+<div class="steps">
+<div class="step">
+<div class="ill">
+<table class="mini"><tr><td>{{how.c1}}</td><td>{{how.c2}}</td><td>{{how.c3}}</td></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon<span class="caret"></span></td></tr></table>
+</div>
+<span class="num">1</span><h3>{{how.s1t}}</h3><p>{{how.s1d}}</p>
+</div>
+<div class="step">
+<div class="ill">
+<table class="mini on"><tr><th>{{how.c1}} <small>🔑</small></th><th>{{how.c2}} <small>Abc</small></th><th>{{how.c3}} <small>Abc</small></th></tr><tr><td>C01</td><td>Martin</td><td>Lyon</td></tr><tr><td>C02</td><td>Dubois</td><td>Paris</td></tr><tr><td>C03</td><td>Bernard</td><td>Lyon</td></tr></table>
+<span class="tag">{{how.tag}}</span>
+</div>
+<span class="num">2</span><h3>{{how.s2t}}</h3><p>{{how.s2d}}</p>
+</div>
+<div class="step">
+<div class="ill code">
+<pre><b>SELECT</b> {{how.c3}}, <b>COUNT</b>(*)
+<b>FROM</b> {{how.table}}
+<b>GROUP BY</b> {{how.c3}};</pre>
+<table class="mini res"><tr><th>{{how.c3}}</th><th>n</th></tr><tr><td>Lyon</td><td>2</td></tr><tr><td>Paris</td><td>1</td></tr></table>
+</div>
+<span class="num">3</span><h3>{{how.s3t}}</h3><p>{{how.s3d}}</p>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="demo"><div class="w">
+<p class="kicker">{{video.kicker}}</p>
+<h2>{{video.title}}</h2>
+<p class="lead">{{video.sub}}</p>
+<div class="video main" role="img" aria-label="{{video.main}} ({{video.soon}})">
+<div class="vgrid" aria-hidden="true"></div>
+<span class="play"><svg><use href="#i-play"/></svg></span>
+<strong>{{video.main}}</strong><em>{{video.soon}}</em>
+</div>
+<div class="vids">
+<div class="video" role="img" aria-label="{{video.v1}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{video.v1}}</strong><em>{{video.soon}}</em></div>
+<div class="video" role="img" aria-label="{{video.v2}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{video.v2}}</strong><em>{{video.soon}}</em></div>
+<div class="video" role="img" aria-label="{{video.v3}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{video.v3}}</strong><em>{{video.soon}}</em></div>
+</div>
+</div></section>
+
+<section id="fonctions"><div class="w">
+<p class="kicker">{{feat.kicker}}</p>
+<h2>{{feat.title}}</h2>
+<p class="lead">{{feat.sub}}</p>
+<div class="feats">
+<div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>{{feat.1t}}</h3><p>{{feat.1d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>{{feat.2t}}</h3><p>{{feat.2d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-lock"/></svg><h3>{{feat.3t}}</h3><p>{{feat.3d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-fx"/></svg><h3>{{feat.4t}}</h3><p>{{feat.4d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>{{feat.5t}}</h3><p>{{feat.5d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-code"/></svg><h3>{{feat.6t}}</h3><p>{{feat.6d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-pivot"/></svg><h3>{{feat.7t}}</h3><p>{{feat.7d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-chart"/></svg><h3>{{feat.8t}}</h3><p>{{feat.8d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-spark"/></svg><h3>{{feat.9t}}</h3><p>{{feat.9d}}</p></div>
+</div>
+
+<div class="show">
+<div class="shot"><img src="{{base}}assets/19-sql-resultat.png" alt="{{show.1a}}" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">SQL</p><h3>{{show.1t}}</h3><p>{{show.1d}}</p></div>
+</div>
+<div class="show rev">
+<div class="shot"><img src="{{base}}assets/15-analyse.png" alt="{{show.2a}}" loading="lazy" width="1440" height="860"></div>
+<div><p class="kicker">{{show.2k}}</p><h3>{{show.2t}}</h3><p>{{show.2d}}</p></div>
+</div>
+<div class="show">
+<div class="video" role="img" aria-label="{{show.3t}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{show.3t}}</strong><em>{{video.soon}}</em></div>
+<div><p class="kicker">Lua</p><h3>{{show.3t}}</h3><p>{{show.3d}}</p>
+<pre class="snippet"><b>for</b> row <b>in</b> db.rows(<i>"SELECT _id, Prix FROM Produits"</i>) <b>do</b>
+  db.update(<i>"Produits"</i>, row._id, { Prix = row.Prix * 1.03 })
+<b>end</b></pre></div>
+</div>
+</div></section>
+
+<section class="alt" id="connexions"><div class="w">
+<p class="kicker">{{conn.kicker}}</p>
+<h2>{{conn.title}}</h2>
+<p class="lead">{{conn.sub}}</p>
+<div class="logos"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL Server</span><span>SQLite</span><span>REST / JSON</span><span>Parquet</span></div>
+<div class="feats three">
+<div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>{{conn.1t}}</h3><p>{{conn.1d}}</p></div>
+<div class="feat"><svg class="fi"><use href="#i-plug"/></svg><h3>{{conn.2t}}</h3><p>{{conn.2d}}</p></div>
+<div class="feat soon"><svg class="fi"><use href="#i-users"/></svg><h3>{{conn.3t}}</h3><p>{{conn.3d}}</p></div>
+</div>
+</div></section>
+
+<section id="gratuit"><div class="w">
+<p class="kicker">{{price.kicker}}</p>
+<h2>{{price.title}}</h2>
+<p class="lead">{{price.sub}}</p>
+<div class="pricing">
+<div class="plan">
+<p class="pname">Lattis</p>
+<p class="amount">{{price.amount}}</p>
+<p class="per">{{price.per}}</p>
+<ul>
+<li><svg class="ico"><use href="#i-check"/></svg>{{price.i1}}</li>
+<li><svg class="ico"><use href="#i-check"/></svg>{{price.i2}}</li>
+<li><svg class="ico"><use href="#i-check"/></svg>{{price.i3}}</li>
+<li><svg class="ico"><use href="#i-check"/></svg>{{price.i4}}</li>
+<li><svg class="ico"><use href="#i-check"/></svg>{{price.i5}}</li>
+</ul>
+<a class="btn wide" href="https://github.com/Be-Lattis/lattis-app">{{price.cta}}</a>
+</div>
+<div class="fund">
+<h3>{{fund.title}}</h3>
+<p class="fsub">{{fund.sub}}</p>
+<div class="fgrid">
+<div><svg class="fi"><use href="#i-heart"/></svg><h4>{{fund.1t}}</h4><p>{{fund.1d}}</p></div>
+<div><svg class="fi"><use href="#i-hand"/></svg><h4>{{fund.2t}}</h4><p>{{fund.2d}}</p></div>
+<div><svg class="fi"><use href="#i-cap"/></svg><h4>{{fund.3t}}</h4><p>{{fund.3d}}</p></div>
+<div><svg class="fi"><use href="#i-compass"/></svg><h4>{{fund.4t}}</h4><p>{{fund.4d}}</p></div>
+</div>
+<a class="btn ghost" href="mailto:contact@lattis.be?subject=Lattis">{{fund.cta}}</a>
+</div>
+</div>
+</div></section>
+
+<section class="alt" id="faq"><div class="w narrow">
+<h2>{{faq.title}}</h2>
+<details><summary>{{faq.q1}}</summary><p>{{faq.a1}}</p></details>
+<details><summary>{{faq.q2}}</summary><p>{{faq.a2}}</p></details>
+<details><summary>{{faq.q3}}</summary><p>{{faq.a3}}</p></details>
+<details><summary>{{faq.q4}}</summary><p>{{faq.a4}}</p></details>
+<details><summary>{{faq.q5}}</summary><p>{{faq.a5}}</p></details>
+<details><summary>{{faq.q6}}</summary><p>{{faq.a6}}</p></details>
+</div></section>
+
+<section class="final"><div class="w">
+<img src="{{base}}assets/lattis-icone.svg" alt="" width="72" height="72">
+<h2>{{cta.title}}</h2>
+<p>{{cta.sub}}</p>
+<a class="btn light" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>{{cta.btn}}</a>
+</div></section>
+</main>
+
+<footer><div class="w">
+<div class="fbrand">
+<img class="light" src="{{base}}assets/be-lattis-logo-clair.svg" alt="Be Lattis" height="28"><img class="dark" src="{{base}}assets/be-lattis-logo-sombre.svg" alt="Be Lattis" height="28">
+<p>{{foot.tag}}</p>
+</div>
+<div class="fcols">
+<div><strong>Lattis</strong><a href="#fonctions">{{nav.features}}</a><a href="#demo">{{nav.video}}</a><a href="#gratuit">{{nav.pricing}}</a><a href="#faq">{{nav.faq}}</a></div>
+<div><strong>{{foot.contact}}</strong><a href="https://github.com/Be-Lattis/lattis-app">GitHub</a><a href="mailto:contact@lattis.be">contact@lattis.be</a></div>
+<div><strong>{{foot.lang}}</strong>{{langList}}</div>
+</div>
+<p class="copy">© 2026 Be Lattis · {{foot.rights}}</p>
+</div></footer>
+<script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
+</body>
+</html>
