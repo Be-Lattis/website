@@ -215,3 +215,22 @@ footer .w{display:grid;grid-template-columns:1fr 2fr;gap:32px}
   .video.main .play{width:64px;height:64px}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+
+/* Téléchargement */
+.dlnote{margin:16px 0 0;font-size:14px;color:var(--mut)}
+.dlstate{margin:-28px 0 28px;color:var(--mut)}
+.dlstate strong{color:var(--txt)}
+.oses{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.os{background:var(--card);border:1px solid var(--bord);border-radius:var(--r);padding:26px;display:flex;flex-direction:column}
+.os.mine{border-color:var(--accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--accent) 18%,transparent)}
+.osi{width:34px;height:34px;fill:var(--txt)}
+.os[data-os="linux"] .osi{fill:none;stroke:var(--txt);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.os h3{margin:14px 0 2px;font-size:20px}
+.os p{margin:0 0 18px;color:var(--mut);font-size:15px}
+.files{display:flex;flex-wrap:wrap;gap:8px;margin-top:auto}
+.files .btn{padding:9px 16px;font-size:15px}
+.files .btn small{font-weight:400;opacity:.75;margin-left:4px}
+.allrel{margin:28px 0 0;font-size:15px}
+.btn.onvert{background:transparent;color:#fff;border-color:rgba(255,255,255,.5)}
+.final .ctas{margin-top:4px}
+@media (max-width:980px){.oses{grid-template-columns:1fr}}

@@ -3,14 +3,12 @@
   "lang.locale": "fr_FR",
   "meta.title": "Lattis, le tableur gratuit qui a la rigueur d'une base de données",
   "meta.desc": "Lattis est un tableur de bureau gratuit et local-first : la souplesse d'Excel, la rigueur d'une base SQLite, du SQL, des scripts Lua et des connexions à vos bases.",
-
   "nav.how": "Principe",
   "nav.features": "Fonctions",
   "nav.video": "Démo",
   "nav.pricing": "Gratuit",
   "nav.faq": "FAQ",
   "nav.cta": "GitHub",
-
   "hero.badge": "Gratuit pour tous · En développement actif",
   "hero.title1": "La souplesse d'un tableur.",
   "hero.title2": "La rigueur d'une base de données.",
@@ -20,12 +18,10 @@
   "hero.alt": "Capture de Lattis : plusieurs tableaux sur une même feuille",
   "hero.chip1": "Tableau détecté : Clients",
   "hero.chip2": "en un clic",
-
   "strip.1": "100 % gratuit",
   "strip.2": "Vos données restent chez vous",
   "strip.3": "Windows, macOS et Linux",
   "strip.4": "Les réflexes d'Excel",
-
   "how.kicker": "Comment ça marche",
   "how.title": "Un tableur qui comprend vos données",
   "how.sub": "Pas de schéma à dessiner, pas d'assistant à suivre. Lattis observe ce que vous tapez et fait le travail de la base de données à votre place.",
@@ -40,7 +36,6 @@
   "how.s2d": "Il repère l'îlot de données, met l'en-tête en valeur, devine le type de chaque colonne et crée la table SQLite correspondante.",
   "how.s3t": "Interrogez, analysez",
   "how.s3d": "Vos tableaux sont de vraies tables : SQL, formules, tableaux croisés et graphiques s'appuient directement sur le moteur.",
-
   "video.kicker": "Démo",
   "video.title": "Voyez Lattis en action",
   "video.sub": "De courtes vidéos pour découvrir l'essentiel. Elles arrivent avec les premières versions publiques.",
@@ -49,7 +44,6 @@
   "video.v1": "Premiers pas",
   "video.v2": "SQL et tableaux croisés",
   "video.v3": "Connecter une base",
-
   "feat.kicker": "Fonctions",
   "feat.title": "Tout ce qu'il faut pour analyser",
   "feat.sub": "Les fonctions les plus utilisées d'Excel, appuyées sur la puissance de SQLite.",
@@ -71,7 +65,6 @@
   "feat.8d": "Des graphiques alimentés par vos données, et des onglets Document pour mettre en page vos analyses.",
   "feat.9t": "Assistant IA, si vous le voulez",
   "feat.9d": "Un onglet Assistant désactivé par défaut, à brancher sur votre propre clé ou compte.",
-
   "show.1a": "Onglet SQL de Lattis avec un résultat sous forme de grille",
   "show.1t": "SQL et grille, côte à côte",
   "show.1d": "Un GROUP BY dans l'onglet SQL, et le résultat s'affiche comme une grille que vous pouvez trier, filtrer et réutiliser.",
@@ -81,7 +74,6 @@
   "show.2d": "Tableaux croisés et graphiques s'appuient sur l'agrégation native de SQLite. Ils se mettent à jour dès que vos données changent.",
   "show.3t": "Automatiser avec Lua",
   "show.3d": "Une API simple et sûre pour manipuler vos tableaux en arrière-plan, avec une référence intégrée et des avertissements pendant la frappe.",
-
   "conn.kicker": "Connexions",
   "conn.title": "Connecté à vos bases",
   "conn.sub": "Importez et rafraîchissez des données externes, à la manière de Power Query. Les mots de passe restent dans le trousseau de votre ordinateur.",
@@ -91,7 +83,6 @@
   "conn.2d": "API REST en JSON, fichiers Parquet et JSON.",
   "conn.3t": "Travail à plusieurs (à l'étude)",
   "conn.3d": "Un « Serveur Lattis » sur PostgreSQL, avec des rôles et des droits. Cette fonction est en conception et n'est pas encore disponible.",
-
   "price.kicker": "Prix",
   "price.title": "Gratuit. Pour tout le monde.",
   "price.sub": "Pas de version Pro, pas d'abonnement, pas de limite de lignes. Lattis est gratuit pour les particuliers comme pour les entreprises, et il le restera.",
@@ -114,7 +105,6 @@
   "fund.4t": "Accompagnement des entreprises",
   "fund.4d": "Aide au déploiement, migration depuis Excel, connexion à vos bases et scripts sur mesure.",
   "fund.cta": "Soutenir Lattis ou nous contacter",
-
   "faq.title": "Questions fréquentes",
   "faq.q1": "Lattis est-il vraiment gratuit ?",
   "faq.a1": "Oui. Toutes les fonctions sont gratuites, pour un usage personnel comme professionnel, sans abonnement ni version Pro. Le projet vit grâce aux dons d'entreprises, aux partenariats, aux formations et à l'accompagnement.",
@@ -125,16 +115,31 @@
   "faq.q4": "Sur quels systèmes fonctionne Lattis ?",
   "faq.a4": "Windows, macOS et Linux. C'est une application native construite en Go avec Wails et SvelteKit, sans la lourdeur d'Electron.",
   "faq.q5": "Quand puis-je l'essayer ?",
-  "faq.a5": "Lattis est en développement actif. Suivez le dépôt GitHub pour être prévenu des premières versions publiques.",
+  "faq.a5": "Dès qu'une version est publiée, le bouton Télécharger récupère automatiquement la plus récente pour votre système. Toutes les versions sont aussi sur GitHub.",
   "faq.q6": "Mon entreprise peut-elle aider ?",
   "faq.a6": "Avec plaisir : par un don, un partenariat, une formation pour vos équipes ou un accompagnement sur mesure. Écrivez-nous à contact@lattis.be.",
-
   "cta.title": "Prêt à donner de la rigueur à vos tableaux ?",
   "cta.sub": "Suivez le projet et soyez parmi les premiers à essayer Lattis.",
   "cta.btn": "Suivre Lattis sur GitHub",
-
   "foot.tag": "Lattis est conçu par Be Lattis.",
   "foot.contact": "Contact",
   "foot.lang": "Langue",
-  "foot.rights": "Lattis est un logiciel gratuit."
+  "foot.rights": "Lattis est un logiciel gratuit.",
+  "nav.download": "Télécharger",
+  "dl.cta": "Télécharger Lattis",
+  "dl.note": "Gratuit pour Windows, macOS et Linux",
+  "dl.other": "Autres systèmes",
+  "dl.kicker": "Téléchargement",
+  "dl.title": "Installez Lattis",
+  "dl.sub": "Le bouton choisit automatiquement le bon installeur pour votre système, à partir de la dernière version publiée.",
+  "dl.loading": "Recherche de la dernière version…",
+  "dl.winReq": "Installeur MSIX",
+  "dl.macReq": "Image disque DMG",
+  "dl.linuxReq": "AppImage, paquets .deb et .rpm",
+  "dl.all": "Toutes les versions et notes de version sur GitHub",
+  "dl.for": "Télécharger pour {os}",
+  "dl.version": "Dernière version :",
+  "dl.soon": "Aucune version publiée pour l'instant. La première arrive bientôt : suivez le dépôt GitHub pour être prévenu.",
+  "dl.error": "Impossible de joindre GitHub pour l'instant. Les fichiers restent disponibles sur la page des versions.",
+  "dl.none": "Voir sur GitHub"
 }

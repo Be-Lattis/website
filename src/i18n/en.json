@@ -3,14 +3,12 @@
   "lang.locale": "en_US",
   "meta.title": "Lattis, the free spreadsheet with the rigor of a database",
   "meta.desc": "Lattis is a free, local-first desktop spreadsheet: the flexibility of Excel, the rigor of a SQLite database, SQL, Lua scripts and connections to your databases.",
-
   "nav.how": "How it works",
   "nav.features": "Features",
   "nav.video": "Demo",
   "nav.pricing": "Free",
   "nav.faq": "FAQ",
   "nav.cta": "GitHub",
-
   "hero.badge": "Free for everyone · In active development",
   "hero.title1": "The flexibility of a spreadsheet.",
   "hero.title2": "The rigor of a database.",
@@ -20,12 +18,10 @@
   "hero.alt": "Screenshot of Lattis: several tables on a single sheet",
   "hero.chip1": "Table detected: Customers",
   "hero.chip2": "in one click",
-
   "strip.1": "100% free",
   "strip.2": "Your data stays with you",
   "strip.3": "Windows, macOS and Linux",
   "strip.4": "Familiar Excel habits",
-
   "how.kicker": "How it works",
   "how.title": "A spreadsheet that understands your data",
   "how.sub": "No schema to draw, no wizard to follow. Lattis watches what you type and does the database work for you.",
@@ -40,7 +36,6 @@
   "how.s2d": "It spots the block of data, highlights the header, infers each column's type and creates the matching SQLite table.",
   "how.s3t": "Query and analyze",
   "how.s3d": "Your tables are real tables: SQL, formulas, pivot tables and charts run directly on the engine.",
-
   "video.kicker": "Demo",
   "video.title": "See Lattis in action",
   "video.sub": "Short videos covering the essentials. They are coming with the first public releases.",
@@ -49,7 +44,6 @@
   "video.v1": "Getting started",
   "video.v2": "SQL and pivot tables",
   "video.v3": "Connecting a database",
-
   "feat.kicker": "Features",
   "feat.title": "Everything you need to analyze",
   "feat.sub": "Excel's most used features, powered by SQLite.",
@@ -71,7 +65,6 @@
   "feat.8d": "Charts fed by your data, and Document tabs to lay out your analyses.",
   "feat.9t": "AI assistant, if you want it",
   "feat.9d": "An Assistant tab that is off by default, which you can connect to your own key or account.",
-
   "show.1a": "The Lattis SQL tab showing a result as a grid",
   "show.1t": "SQL and grid, side by side",
   "show.1d": "Run a GROUP BY in the SQL tab and the result appears as a grid you can sort, filter and reuse.",
@@ -81,7 +74,6 @@
   "show.2d": "Pivot tables and charts rely on SQLite's native aggregation. They update as soon as your data changes.",
   "show.3t": "Automate with Lua",
   "show.3d": "A simple, safe API to work on your tables in the background, with a built-in reference and warnings as you type.",
-
   "conn.kicker": "Connections",
   "conn.title": "Connected to your databases",
   "conn.sub": "Import and refresh external data, Power Query style. Passwords stay in your computer's keychain.",
@@ -91,7 +83,6 @@
   "conn.2d": "JSON REST APIs, Parquet and JSON files.",
   "conn.3t": "Teamwork (under study)",
   "conn.3d": "A “Lattis Server” on PostgreSQL, with roles and permissions. This feature is being designed and is not available yet.",
-
   "price.kicker": "Pricing",
   "price.title": "Free. For everyone.",
   "price.sub": "No Pro edition, no subscription, no row limit. Lattis is free for individuals and companies alike, and it will stay that way.",
@@ -114,7 +105,6 @@
   "fund.4t": "Business support",
   "fund.4d": "Help with rollout, migration from Excel, connecting your databases and custom scripts.",
   "fund.cta": "Support Lattis or get in touch",
-
   "faq.title": "Frequently asked questions",
   "faq.q1": "Is Lattis really free?",
   "faq.a1": "Yes. Every feature is free, for personal and professional use, with no subscription and no Pro edition. The project is funded by company donations, partnerships, training and business support.",
@@ -125,16 +115,31 @@
   "faq.q4": "Which systems does Lattis run on?",
   "faq.a4": "Windows, macOS and Linux. It is a native application built in Go with Wails and SvelteKit, without the weight of Electron.",
   "faq.q5": "When can I try it?",
-  "faq.a5": "Lattis is in active development. Follow the GitHub repository to hear about the first public releases.",
+  "faq.a5": "As soon as a release is published, the Download button fetches the latest one for your system. Every release is also on GitHub.",
   "faq.q6": "Can my company help?",
   "faq.a6": "Gladly: through a donation, a partnership, training for your teams or tailored support. Write to us at contact@lattis.be.",
-
   "cta.title": "Ready to bring rigor to your spreadsheets?",
   "cta.sub": "Follow the project and be among the first to try Lattis.",
   "cta.btn": "Follow Lattis on GitHub",
-
   "foot.tag": "Lattis is made by Be Lattis.",
   "foot.contact": "Contact",
   "foot.lang": "Language",
-  "foot.rights": "Lattis is free to use."
+  "foot.rights": "Lattis is free to use.",
+  "nav.download": "Download",
+  "dl.cta": "Download Lattis",
+  "dl.note": "Free for Windows, macOS and Linux",
+  "dl.other": "Other systems",
+  "dl.kicker": "Download",
+  "dl.title": "Install Lattis",
+  "dl.sub": "The button automatically picks the right installer for your system from the latest release.",
+  "dl.loading": "Looking for the latest release…",
+  "dl.winReq": "MSIX installer",
+  "dl.macReq": "DMG disk image",
+  "dl.linuxReq": "AppImage, .deb and .rpm packages",
+  "dl.all": "All releases and release notes on GitHub",
+  "dl.for": "Download for {os}",
+  "dl.version": "Latest release:",
+  "dl.soon": "No release published yet. The first one is coming soon: follow the GitHub repository to be notified.",
+  "dl.error": "GitHub can't be reached right now. The files are still available on the releases page.",
+  "dl.none": "View on GitHub"
 }

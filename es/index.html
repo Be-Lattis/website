@@ -43,6 +43,10 @@
 <symbol id="i-compass" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m15.5 8.5-2 5-5 2 2-5z"/></symbol>
 <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
 <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-down" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></symbol>
+<symbol id="i-win" viewBox="0 0 24 24"><path d="M3 5.5 10.5 4.5v7H3zM13 4.2 21 3v8.5h-8zM3 13h7.5v7L3 19zM13 13h8v8l-8-1.2z"/></symbol>
+<symbol id="i-apple" viewBox="0 0 24 24"><path d="M16.5 12.6c0-2.4 2-3.5 2-3.6-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.2-2.8.8-3.5.8s-1.8-.8-3-.8C7 7.2 5.5 8.1 4.7 9.6c-1.7 2.9-.4 7.2 1.2 9.5.8 1.1 1.7 2.4 2.9 2.4 1.2 0 1.6-.8 3-.8s1.8.8 3 .8c1.3 0 2.1-1.2 2.8-2.3.9-1.3 1.3-2.6 1.3-2.7 0 0-2.4-.9-2.4-3.9zM14.2 5.6c.6-.8 1.1-1.9 1-3-.9 0-2.1.6-2.7 1.4-.6.7-1.1 1.8-1 2.9 1 .1 2.1-.5 2.7-1.3z"/></symbol>
+<symbol id="i-linux" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M12 15h5"/></symbol>
 <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.5 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.5-3.8-9S9.5 5.5 12 3z"/></symbol>
 <symbol id="i-gh" viewBox="0 0 24 24"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></symbol>
 </svg>
@@ -50,7 +54,7 @@
 <header class="top"><div class="w">
 <a class="brand" href="../es/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
 <nav class="nav">
-<a href="#comment">Cómo funciona</a><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a>
+<a href="#comment">Cómo funciona</a><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a><a href="#telecharger">Descargar</a>
 </nav>
 <div class="tools">
 <details class="lang"><summary aria-label="Idioma"><svg class="ico"><use href="#i-globe"/></svg><span>ES</span></summary>
@@ -67,9 +71,10 @@
 <h1>La flexibilidad de una hoja de cálculo.<br><span class="accent">El rigor de una base de datos.</span></h1>
 <p class="sub">Lattis es una hoja de cálculo de escritorio moderna y rápida. Escribes como en Excel y guarda tus datos en tablas SQLite reales, en tu propio ordenador. Y sigue siendo gratis, para todo el mundo.</p>
 <div class="ctas">
-<a class="btn" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir el proyecto</a>
+<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Descargar Lattis</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Ver la demo</a>
 </div>
+<p class="dlnote" id="dl-note">Gratis para Windows, macOS y Linux · <a href="#telecharger">Otros sistemas</a></p>
 <div class="stage">
 <div class="window">
 <div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
@@ -195,7 +200,7 @@
 <li><svg class="ico"><use href="#i-check"/></svg>Tus datos se quedan en tu equipo</li>
 <li><svg class="ico"><use href="#i-check"/></svg>Actualizaciones incluidas</li>
 </ul>
-<a class="btn wide" href="https://github.com/Be-Lattis/lattis-app">Seguir las versiones</a>
+<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Descargar Lattis</a>
 </div>
 <div class="fund">
 <h3>Entonces, ¿quién financia Lattis?</h3>
@@ -211,13 +216,26 @@
 </div>
 </div></section>
 
-<section class="alt" id="faq"><div class="w narrow">
+<section class="alt" id="telecharger"><div class="w">
+<p class="kicker">Descarga</p>
+<h2>Instala Lattis</h2>
+<p class="lead">El botón elige automáticamente el instalador adecuado para tu sistema a partir de la última versión publicada.</p>
+<p class="dlstate" id="dl-state">Buscando la última versión…</p>
+<div class="oses">
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>Instalador MSIX</p><div class="files" data-ext="msix,exe,msi"></div></div>
+<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>Imagen de disco DMG</p><div class="files" data-ext="dmg,pkg"></div></div>
+<div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage, paquetes .deb y .rpm</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
+</div>
+<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">Todas las versiones y notas de versión en GitHub</a></p>
+</div></section>
+
+<section id="faq"><div class="w narrow">
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Lattis es realmente gratis?</summary><p>Sí. Todas las funciones son gratuitas, para uso personal y profesional, sin suscripción ni versión Pro. El proyecto se financia con donaciones de empresas, alianzas, formación y acompañamiento.</p></details>
 <details><summary>¿Dónde se guardan mis datos?</summary><p>En tu ordenador. Un libro es un archivo <code>.lattis</code> que contiene una base SQLite. Nada se envía a un servidor, salvo que tú conectes una base externa.</p></details>
 <details><summary>¿Conservo mis hábitos de Excel?</summary><p>Sí: cinta de opciones, menús contextuales, atajos, deshacer y rehacer, fórmulas conocidas. BUSCARV incluso se convierte automáticamente en REFERENCE.</p></details>
 <details><summary>¿En qué sistemas funciona Lattis?</summary><p>Windows, macOS y Linux. Es una aplicación nativa hecha en Go con Wails y SvelteKit, sin el peso de Electron.</p></details>
-<details><summary>¿Cuándo puedo probarlo?</summary><p>Lattis está en desarrollo activo. Sigue el repositorio de GitHub para enterarte de las primeras versiones públicas.</p></details>
+<details><summary>¿Cuándo puedo probarlo?</summary><p>En cuanto se publique una versión, el botón Descargar obtendrá automáticamente la más reciente para tu sistema. Todas las versiones están también en GitHub.</p></details>
 <details><summary>¿Puede ayudar mi empresa?</summary><p>Con gusto: con una donación, una alianza, formación para tus equipos o un acompañamiento a medida. Escríbenos a contact@lattis.be.</p></details>
 </div></section>
 
@@ -225,7 +243,7 @@
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
 <h2>¿Listo para dar rigor a tus hojas de cálculo?</h2>
 <p>Sigue el proyecto y sé de los primeros en probar Lattis.</p>
-<a class="btn light" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir Lattis en GitHub</a>
+<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Descargar Lattis</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir Lattis en GitHub</a></div>
 </div></section>
 </main>
 
@@ -242,5 +260,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis es gratuito.</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
+<script>window.LATTIS_DL={for:"Descargar para {os}",version:"Última versión:",soon:"Todavía no hay ninguna versión publicada. La primera llegará pronto: sigue el repositorio de GitHub para enterarte.",error:"No se puede contactar con GitHub en este momento. Los archivos siguen disponibles en la página de versiones.",none:"Ver en GitHub"};</script>
+<script src="../download.js" defer></script>
 </body>
 </html>

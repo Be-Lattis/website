@@ -3,14 +3,12 @@
   "lang.locale": "zh_CN",
   "meta.title": "Lattis：拥有数据库严谨性的免费电子表格",
   "meta.desc": "Lattis 是一款免费、本地优先的桌面电子表格：兼具 Excel 的灵活与 SQLite 数据库的严谨，支持 SQL、Lua 脚本，并可连接您的数据库。",
-
   "nav.how": "原理",
   "nav.features": "功能",
   "nav.video": "演示",
   "nav.pricing": "免费",
   "nav.faq": "常见问题",
   "nav.cta": "GitHub",
-
   "hero.badge": "人人免费 · 持续开发中",
   "hero.title1": "电子表格的灵活。",
   "hero.title2": "数据库的严谨。",
@@ -20,12 +18,10 @@
   "hero.alt": "Lattis 截图：同一工作表中的多个表格",
   "hero.chip1": "已识别表格：客户",
   "hero.chip2": "一键完成",
-
   "strip.1": "完全免费",
   "strip.2": "数据留在您身边",
   "strip.3": "Windows、macOS 和 Linux",
   "strip.4": "延续 Excel 的使用习惯",
-
   "how.kicker": "工作原理",
   "how.title": "读得懂数据的电子表格",
   "how.sub": "无需绘制数据结构，也无需跟随向导。Lattis 观察您的输入，替您完成数据库的工作。",
@@ -40,7 +36,6 @@
   "how.s2d": "它会找到数据区域，突出显示表头，推断每一列的类型，并创建对应的 SQLite 表。",
   "how.s3t": "查询与分析",
   "how.s3d": "您的表格就是真正的数据表：SQL、公式、数据透视表和图表都直接运行在引擎之上。",
-
   "video.kicker": "演示",
   "video.title": "看看 Lattis 如何工作",
   "video.sub": "用几段短视频了解核心功能。视频将随首批公开版本一同发布。",
@@ -49,7 +44,6 @@
   "video.v1": "快速入门",
   "video.v2": "SQL 与数据透视表",
   "video.v3": "连接数据库",
-
   "feat.kicker": "功能",
   "feat.title": "分析所需，一应俱全",
   "feat.sub": "Excel 最常用的功能，由 SQLite 提供动力。",
@@ -71,7 +65,6 @@
   "feat.8d": "由数据驱动的图表，以及用于排版分析结果的文档标签页。",
   "feat.9t": "AI 助手（可选）",
   "feat.9d": "助手标签页默认关闭，可接入您自己的密钥或账户。",
-
   "show.1a": "Lattis 的 SQL 标签页，以网格形式显示结果",
   "show.1t": "SQL 与网格，并排呈现",
   "show.1d": "在 SQL 标签页中执行 GROUP BY，结果即以网格显示，可排序、筛选并再次使用。",
@@ -81,7 +74,6 @@
   "show.2d": "数据透视表和图表基于 SQLite 的原生聚合，数据一变化就会立即更新。",
   "show.3t": "用 Lua 自动化",
   "show.3d": "简单而安全的 API，可在后台处理表格，并提供内置参考和输入时的提示。",
-
   "conn.kicker": "连接",
   "conn.title": "连接您的数据库",
   "conn.sub": "像 Power Query 一样导入并刷新外部数据。密码保存在您电脑的钥匙串中。",
@@ -91,7 +83,6 @@
   "conn.2d": "JSON REST API，Parquet 与 JSON 文件。",
   "conn.3t": "多人协作（研究中）",
   "conn.3d": "基于 PostgreSQL 的「Lattis 服务器」，支持角色与权限。该功能仍在设计中，尚未提供。",
-
   "price.kicker": "价格",
   "price.title": "免费，面向所有人。",
   "price.sub": "没有专业版，没有订阅，没有行数限制。Lattis 对个人和企业都免费，并将一直免费。",
@@ -114,7 +105,6 @@
   "fund.4t": "企业服务",
   "fund.4d": "协助部署、从 Excel 迁移、连接数据库以及定制脚本。",
   "fund.cta": "支持 Lattis 或联系我们",
-
   "faq.title": "常见问题",
   "faq.q1": "Lattis 真的免费吗？",
   "faq.a1": "是的。所有功能均免费，个人和商业用途皆可，没有订阅，也没有专业版。项目依靠企业捐赠、合作伙伴、培训和企业服务维持。",
@@ -125,16 +115,31 @@
   "faq.q4": "Lattis 支持哪些系统？",
   "faq.a4": "Windows、macOS 和 Linux。它是用 Go、Wails 和 SvelteKit 构建的原生应用，没有 Electron 的臃肿。",
   "faq.q5": "什么时候可以试用？",
-  "faq.a5": "Lattis 正在积极开发中。关注 GitHub 仓库，即可第一时间获知首批公开版本。",
+  "faq.a5": "一旦有版本发布，下载按钮会自动为您的系统获取最新版本。所有版本也都可以在 GitHub 上找到。",
   "faq.q6": "我的公司可以提供帮助吗？",
   "faq.a6": "非常欢迎：可以通过捐赠、合作、团队培训或定制服务。请发邮件至 contact@lattis.be。",
-
   "cta.title": "准备好让表格更严谨了吗？",
   "cta.sub": "关注项目，成为首批体验 Lattis 的用户。",
   "cta.btn": "在 GitHub 上关注 Lattis",
-
   "foot.tag": "Lattis 由 Be Lattis 打造。",
   "foot.contact": "联系",
   "foot.lang": "语言",
-  "foot.rights": "Lattis 免费使用。"
+  "foot.rights": "Lattis 免费使用。",
+  "nav.download": "下载",
+  "dl.cta": "下载 Lattis",
+  "dl.note": "免费支持 Windows、macOS 和 Linux",
+  "dl.other": "其他系统",
+  "dl.kicker": "下载",
+  "dl.title": "安装 Lattis",
+  "dl.sub": "按钮会根据最新发布的版本，自动为您的系统选择合适的安装包。",
+  "dl.loading": "正在查找最新版本…",
+  "dl.winReq": "MSIX 安装包",
+  "dl.macReq": "DMG 磁盘映像",
+  "dl.linuxReq": "AppImage、.deb 和 .rpm 软件包",
+  "dl.all": "在 GitHub 上查看所有版本及更新说明",
+  "dl.for": "下载 {os} 版",
+  "dl.version": "最新版本：",
+  "dl.soon": "目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",
+  "dl.error": "暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",
+  "dl.none": "在 GitHub 上查看"
 }
