@@ -67,14 +67,14 @@
 <section class="hero">
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
-<span class="badge"><span class="dot"></span>Free for everyone · In active development</span>
+<span class="badge"><span class="dot"></span>Public beta available · Free for everyone</span>
 <h1>The flexibility of a spreadsheet.<br><span class="accent">The rigor of a database.</span></h1>
 <p class="sub">Lattis is a fast, modern desktop spreadsheet. You type just like in Excel, and it stores your data in real SQLite tables, on your own computer. And it stays free, for everyone.</p>
 <div class="ctas">
-<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Download Lattis</span></a>
+<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Download the beta</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Watch the demo</a>
 </div>
-<p class="dlnote" id="dl-note">Free for Windows, macOS and Linux · <a href="#telecharger">Other systems</a></p>
+<p class="dlnote" id="dl-note">Free beta for Windows, macOS and Linux · <a href="#telecharger">Other systems</a></p>
 <div class="stage">
 <div class="window">
 <div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
@@ -200,7 +200,7 @@
 <li><svg class="ico"><use href="#i-check"/></svg>Your data stays on your machine</li>
 <li><svg class="ico"><use href="#i-check"/></svg>Updates included</li>
 </ul>
-<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Download Lattis</a>
+<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Download the beta</a>
 </div>
 <div class="fund">
 <h3>So who funds Lattis?</h3>
@@ -220,13 +220,14 @@
 <p class="kicker">Download</p>
 <h2>Install Lattis</h2>
 <p class="lead">The button automatically picks the right installer for your system from the latest release.</p>
+<div class="betanote"><span class="pill">Beta</span><p>Lattis is in beta and may still have bugs. Keep a copy of your important files and report problems on GitHub.</p></div>
 <p class="dlstate" id="dl-state">Looking for the latest release…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>MSIX installer</p><div class="files" data-ext="msix,exe,msi"></div></div>
-<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG disk image</p><div class="files" data-ext="dmg,pkg"></div></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe installer</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">The installers are not signed yet. If SmartScreen shows “Windows protected your PC”, click “More info” and then “Run anyway”.</p></div>
+<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG disk image</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">If macOS refuses to open the app the first time, go to System Settings, Privacy & Security, and click “Open Anyway”.</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage, .deb and .rpm packages</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
-<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">All releases and release notes on GitHub</a></p>
+<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">All releases and release notes on GitHub</a><a id="dl-sums" hidden>SHA-256 checksums</a></p>
 </div></section>
 
 <section id="faq"><div class="w narrow">
@@ -235,15 +236,15 @@
 <details><summary>Where is my data stored?</summary><p>On your computer. A workbook is a <code>.lattis</code> file containing a SQLite database. Nothing goes to a server unless you connect an external database yourself.</p></details>
 <details><summary>Will my Excel habits still work?</summary><p>Yes: ribbon, context menus, shortcuts, undo and redo, familiar formulas. VLOOKUP is even converted to REFERENCE automatically.</p></details>
 <details><summary>Which systems does Lattis run on?</summary><p>Windows, macOS and Linux. It is a native application built in Go with Wails and SvelteKit, without the weight of Electron.</p></details>
-<details><summary>When can I try it?</summary><p>As soon as a release is published, the Download button fetches the latest one for your system. Every release is also on GitHub.</p></details>
+<details><summary>When can I try it?</summary><p>Right now: a first beta is available for Windows, macOS and Linux. The Download button automatically fetches the latest version for your system.</p></details>
 <details><summary>Can my company help?</summary><p>Gladly: through a donation, a partnership, training for your teams or tailored support. Write to us at contact@lattis.be.</p></details>
 </div></section>
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
 <h2>Ready to bring rigor to your spreadsheets?</h2>
-<p>Follow the project and be among the first to try Lattis.</p>
-<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Download Lattis</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Follow Lattis on GitHub</a></div>
+<p>Try the beta and tell us what you think on GitHub.</p>
+<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Download the beta</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Follow Lattis on GitHub</a></div>
 </div></section>
 </main>
 
@@ -261,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis is free and open source software. The Lattis and Be Lattis names and logos are reserved.</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"Download for {os}",version:"Latest release:",soon:"No release published yet. The first one is coming soon: follow the GitHub repository to be notified.",error:"GitHub can't be reached right now. The files are still available on the releases page.",none:"View on GitHub"};</script>
+<script>window.LATTIS_DL={for:"Download the beta for {os}",version:"Version:",soon:"No release published yet. The first one is coming soon: follow the GitHub repository to be notified.",error:"GitHub can't be reached right now. The files are still available on the releases page.",none:"View on GitHub",beta:"Beta"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>

@@ -4,7 +4,8 @@
 (function () {
   var T = window.LATTIS_DL || {};
   var RELEASES = 'https://github.com/Be-Lattis/lattis-app/releases';
-  var API = 'https://api.github.com/repos/Be-Lattis/lattis-app/releases/latest';
+  // Liste des releases plutôt que releases/latest, qui ignore les pré-versions (bêta).
+  var API = 'https://api.github.com/repos/Be-Lattis/lattis-app/releases?per_page=10';
   var NAMES = { windows: 'Windows', mac: 'macOS', linux: 'Linux' };
 
   function detectOS() {
@@ -55,14 +56,18 @@
 
   fetch(API, { headers: { Accept: 'application/vnd.github+json' } })
     .then(function (r) {
-      if (r.status === 404) throw 'soon';
       if (!r.ok) throw 'error';
       return r.json();
     })
-    .then(function (rel) {
+    .then(function (list) {
+      var rel = (list || []).filter(function (x) { return !x.draft; })[0];
+      if (!rel) throw 'soon';
       var assets = rel.assets || [];
       var version = rel.tag_name || rel.name || '';
-      if (state) state.innerHTML = (T.version || '') + ' <strong>' + version + '</strong>';
+      if (state) state.innerHTML = (T.version || '') + ' <strong>' + version + '</strong>' + (rel.prerelease ? ' <span class="pill">' + (T.beta || 'beta') + '</span>' : '');
+      var sums = assets.filter(function (a) { return /sha256/i.test(a.name); })[0];
+      var sl = document.getElementById('dl-sums');
+      if (sums && sl) { sl.href = sums.browser_download_url; sl.hidden = false; }
       cards.forEach(function (c) {
         var exts = c.querySelector('.files').dataset.ext.split(',');
         var files = assets.filter(function (a) { return exts.some(function (e) { return ext(a.name) === e.toLowerCase(); }); });

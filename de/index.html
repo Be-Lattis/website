@@ -67,14 +67,14 @@
 <section class="hero">
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
-<span class="badge"><span class="dot"></span>Kostenlos für alle · In aktiver Entwicklung</span>
+<span class="badge"><span class="dot"></span>Öffentliche Beta verfügbar · Kostenlos für alle</span>
 <h1>Die Flexibilität einer Tabellenkalkulation.<br><span class="accent">Die Strenge einer Datenbank.</span></h1>
 <p class="sub">Lattis ist eine moderne, schnelle Desktop-Tabellenkalkulation. Sie tippen wie in Excel, und Lattis legt Ihre Daten in echten SQLite-Tabellen ab, auf Ihrem eigenen Rechner. Und es bleibt kostenlos, für alle.</p>
 <div class="ctas">
-<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Lattis herunterladen</span></a>
+<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Beta herunterladen</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Demo ansehen</a>
 </div>
-<p class="dlnote" id="dl-note">Kostenlos für Windows, macOS und Linux · <a href="#telecharger">Andere Systeme</a></p>
+<p class="dlnote" id="dl-note">Kostenlose Beta für Windows, macOS und Linux · <a href="#telecharger">Andere Systeme</a></p>
 <div class="stage">
 <div class="window">
 <div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
@@ -200,7 +200,7 @@
 <li><svg class="ico"><use href="#i-check"/></svg>Ihre Daten bleiben auf Ihrem Rechner</li>
 <li><svg class="ico"><use href="#i-check"/></svg>Updates inklusive</li>
 </ul>
-<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Lattis herunterladen</a>
+<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Beta herunterladen</a>
 </div>
 <div class="fund">
 <h3>Wer finanziert Lattis also?</h3>
@@ -220,13 +220,14 @@
 <p class="kicker">Download</p>
 <h2>Lattis installieren</h2>
 <p class="lead">Die Schaltfläche wählt automatisch das passende Installationsprogramm für Ihr System aus der neuesten Version.</p>
+<div class="betanote"><span class="pill">Beta</span><p>Lattis ist in der Beta-Phase und kann noch Fehler enthalten. Bewahren Sie eine Kopie wichtiger Dateien auf und melden Sie Probleme auf GitHub.</p></div>
 <p class="dlstate" id="dl-state">Neueste Version wird gesucht…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>MSIX-Installationsprogramm</p><div class="files" data-ext="msix,exe,msi"></div></div>
-<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG-Disk-Image</p><div class="files" data-ext="dmg,pkg"></div></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe-Installationsprogramm</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">Die Installationsprogramme sind noch nicht signiert. Wenn SmartScreen „Der Computer wurde durch Windows geschützt“ anzeigt, klicken Sie auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“.</p></div>
+<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG-Disk-Image</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">Wenn macOS das Öffnen beim ersten Mal verweigert, gehen Sie zu Systemeinstellungen, Datenschutz & Sicherheit, und klicken Sie auf „Dennoch öffnen“.</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage, .deb- und .rpm-Pakete</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
-<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">Alle Versionen und Versionshinweise auf GitHub</a></p>
+<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">Alle Versionen und Versionshinweise auf GitHub</a><a id="dl-sums" hidden>SHA-256-Prüfsummen</a></p>
 </div></section>
 
 <section id="faq"><div class="w narrow">
@@ -235,15 +236,15 @@
 <details><summary>Wo werden meine Daten gespeichert?</summary><p>Auf Ihrem Rechner. Eine Arbeitsmappe ist eine <code>.lattis</code>-Datei mit einer SQLite-Datenbank. Nichts geht an einen Server, außer Sie verbinden selbst eine externe Datenbank.</p></details>
 <details><summary>Finde ich meine Excel-Gewohnheiten wieder?</summary><p>Ja: Menüband, Kontextmenüs, Tastenkürzel, Rückgängig und Wiederholen, vertraute Formeln. SVERWEIS wird sogar automatisch in REFERENCE umgewandelt.</p></details>
 <details><summary>Auf welchen Systemen läuft Lattis?</summary><p>Windows, macOS und Linux. Es ist eine native Anwendung in Go mit Wails und SvelteKit, ohne den Ballast von Electron.</p></details>
-<details><summary>Wann kann ich es ausprobieren?</summary><p>Sobald eine Version veröffentlicht ist, lädt die Schaltfläche Herunterladen automatisch die neueste für Ihr System. Alle Versionen finden Sie auch auf GitHub.</p></details>
+<details><summary>Wann kann ich es ausprobieren?</summary><p>Ab sofort: Eine erste Beta ist für Windows, macOS und Linux verfügbar. Die Schaltfläche Herunterladen holt automatisch die neueste Version für Ihr System.</p></details>
 <details><summary>Kann mein Unternehmen helfen?</summary><p>Gern: mit einer Spende, einer Partnerschaft, einer Schulung für Ihre Teams oder individueller Begleitung. Schreiben Sie uns an contact@lattis.be.</p></details>
 </div></section>
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
 <h2>Bereit für mehr Ordnung in Ihren Tabellen?</h2>
-<p>Verfolgen Sie das Projekt und gehören Sie zu den Ersten, die Lattis ausprobieren.</p>
-<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Lattis herunterladen</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Lattis auf GitHub folgen</a></div>
+<p>Probieren Sie die Beta aus und sagen Sie uns auf GitHub Ihre Meinung.</p>
+<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Beta herunterladen</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Lattis auf GitHub folgen</a></div>
 </div></section>
 </main>
 
@@ -261,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis ist freie und kostenlose Software. Die Namen und Logos Lattis und Be Lattis bleiben vorbehalten.</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"Für {os} herunterladen",version:"Neueste Version:",soon:"Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",error:"GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",none:"Auf GitHub ansehen"};</script>
+<script>window.LATTIS_DL={for:"Beta für {os} herunterladen",version:"Version:",soon:"Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",error:"GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",none:"Auf GitHub ansehen",beta:"Beta"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>

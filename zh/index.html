@@ -67,14 +67,14 @@
 <section class="hero">
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
-<span class="badge"><span class="dot"></span>人人免费 · 持续开发中</span>
+<span class="badge"><span class="dot"></span>公开测试版已发布 · 人人免费</span>
 <h1>电子表格的灵活。<br><span class="accent">数据库的严谨。</span></h1>
 <p class="sub">Lattis 是一款现代、快速的桌面电子表格。您像在 Excel 中一样输入，它会把数据存入真正的 SQLite 表，保存在您自己的电脑上。而且它对所有人永久免费。</p>
 <div class="ctas">
-<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>下载 Lattis</span></a>
+<a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>下载测试版</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>观看演示</a>
 </div>
-<p class="dlnote" id="dl-note">免费支持 Windows、macOS 和 Linux · <a href="#telecharger">其他系统</a></p>
+<p class="dlnote" id="dl-note">Windows、macOS 和 Linux 免费测试版 · <a href="#telecharger">其他系统</a></p>
 <div class="stage">
 <div class="window">
 <div class="bar"><i></i><i></i><i></i><span>Lattis</span></div>
@@ -200,7 +200,7 @@
 <li><svg class="ico"><use href="#i-check"/></svg>数据保存在您自己的电脑上</li>
 <li><svg class="ico"><use href="#i-check"/></svg>包含所有更新</li>
 </ul>
-<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>下载 Lattis</a>
+<a class="btn wide light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>下载测试版</a>
 </div>
 <div class="fund">
 <h3>那么，谁来资助 Lattis？</h3>
@@ -220,13 +220,14 @@
 <p class="kicker">下载</p>
 <h2>安装 Lattis</h2>
 <p class="lead">按钮会根据最新发布的版本，自动为您的系统选择合适的安装包。</p>
+<div class="betanote"><span class="pill">测试版</span><p>Lattis 目前处于测试阶段，可能仍有错误。请备份重要文件，并在 GitHub 上反馈问题。</p></div>
 <p class="dlstate" id="dl-state">正在查找最新版本…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>MSIX 安装包</p><div class="files" data-ext="msix,exe,msi"></div></div>
-<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG 磁盘映像</p><div class="files" data-ext="dmg,pkg"></div></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe 安装程序</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">安装包暂未签名。如果 SmartScreen 显示「Windows 已保护你的电脑」，请点击「更多信息」，然后点击「仍要运行」。</p></div>
+<div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG 磁盘映像</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">如果 macOS 首次拒绝打开应用，请前往「系统设置」中的「隐私与安全性」，点击「仍要打开」。</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage、.deb 和 .rpm 软件包</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
-<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">在 GitHub 上查看所有版本及更新说明</a></p>
+<p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">在 GitHub 上查看所有版本及更新说明</a><a id="dl-sums" hidden>SHA-256 校验和</a></p>
 </div></section>
 
 <section id="faq"><div class="w narrow">
@@ -235,15 +236,15 @@
 <details><summary>我的数据存放在哪里？</summary><p>在您的电脑上。每个工作簿是一个包含 SQLite 数据库的 <code>.lattis</code> 文件。除非您主动连接外部数据库，否则不会有任何数据发送到服务器。</p></details>
 <details><summary>我还能沿用 Excel 的习惯吗？</summary><p>可以：功能区、右键菜单、快捷键、撤销与重做、熟悉的公式。VLOOKUP 甚至会自动转换为 REFERENCE。</p></details>
 <details><summary>Lattis 支持哪些系统？</summary><p>Windows、macOS 和 Linux。它是用 Go、Wails 和 SvelteKit 构建的原生应用，没有 Electron 的臃肿。</p></details>
-<details><summary>什么时候可以试用？</summary><p>一旦有版本发布，下载按钮会自动为您的系统获取最新版本。所有版本也都可以在 GitHub 上找到。</p></details>
+<details><summary>什么时候可以试用？</summary><p>现在就可以：首个测试版已支持 Windows、macOS 和 Linux。下载按钮会自动为您的系统获取最新版本。</p></details>
 <details><summary>我的公司可以提供帮助吗？</summary><p>非常欢迎：可以通过捐赠、合作、团队培训或定制服务。请发邮件至 contact@lattis.be。</p></details>
 </div></section>
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
 <h2>准备好让表格更严谨了吗？</h2>
-<p>关注项目，成为首批体验 Lattis 的用户。</p>
-<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>下载 Lattis</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>在 GitHub 上关注 Lattis</a></div>
+<p>试用测试版，并在 GitHub 上告诉我们您的想法。</p>
+<div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>下载测试版</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>在 GitHub 上关注 Lattis</a></div>
 </div></section>
 </main>
 
@@ -261,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis 是免费的自由软件。Lattis 和 Be Lattis 的名称与标志保留所有权利。</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"下载 {os} 版",version:"最新版本：",soon:"目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",error:"暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",none:"在 GitHub 上查看"};</script>
+<script>window.LATTIS_DL={for:"下载 {os} 测试版",version:"版本：",soon:"目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",error:"暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",none:"在 GitHub 上查看",beta:"测试版"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>
