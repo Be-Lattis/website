@@ -199,6 +199,53 @@
 </div>
 </div></section>
 
+<section class="geek" id="architecture"><div class="w">
+<p class="kicker">Architecture</p>
+<h2>Sous le capot</h2>
+<p class="lead">Pour les curieux : une application native, une vraie base de données dans chaque fichier, et un serveur auto-hébergé quand on travaille à plusieurs.</p>
+<div class="archfig">
+<svg viewBox="0 0 960 380" role="img" aria-label="Sous le capot">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="ah"/></marker></defs>
+<rect class="ab" x="20" y="20" width="300" height="340" rx="16"/>
+<text class="at" x="40" y="52">Application de bureau</text>
+<rect class="ai" x="40" y="70" width="260" height="62" rx="10"/>
+<text class="an" x="56" y="96">Interface SvelteKit</text><text class="as" x="56" y="118">Wails v3 · binaire natif</text>
+<rect class="ai" x="40" y="160" width="260" height="62" rx="10"/>
+<text class="an" x="56" y="186">Cœur en Go</text><text class="as" x="56" y="208">formules → SQL · Lua · MCP</text>
+<rect class="ai" x="40" y="250" width="260" height="62" rx="10"/>
+<text class="an" x="56" y="276">Fichier .lattis</text><text class="as" x="56" y="298">SQLite (WAL)</text>
+<path class="al" d="M170 132v26M170 222v26" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<rect class="ab" x="388" y="40" width="234" height="80" rx="14"/>
+<text class="an" x="404" y="72">Dossier partagé / NAS</text><text class="as" x="404" y="96">un journal par poste</text>
+<rect class="ab" x="388" y="270" width="234" height="70" rx="14"/>
+<text class="an" x="404" y="300">Navigateur</text><text class="as" x="404" y="322">édition web</text>
+<rect class="ab srv" x="660" y="20" width="280" height="340" rx="16"/>
+<text class="at" x="680" y="52">Serveur Lattis (auto-hébergé)</text>
+<rect class="ai" x="680" y="70" width="240" height="78" rx="10"/>
+<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">OAuth · PKCE · admin</text><text class="as" x="696" y="138">/app/ · lattis-engine</text>
+<rect class="ai" x="680" y="200" width="240" height="78" rx="10"/>
+<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">source de vérité</text><text class="as" x="696" y="268">RLS · NOTIFY</text>
+<path class="al" d="M800 148v50" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<text class="as" x="808" y="178">droits</text>
+<path class="al" d="M300 175C340 150 350 95 386 85" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<text class="al2" x="306" y="150">sans serveur</text>
+<path class="al" d="M300 280C450 280 520 240 678 240" marker-end="url(#ar)" marker-start="url(#ar)"/>
+<text class="al2" x="430" y="236">synchro + file hors ligne</text>
+<path class="al" d="M300 195C450 195 520 110 678 110" marker-end="url(#ar)"/>
+<text class="al2" x="500" y="132">connexion</text>
+<path class="al" d="M622 300C650 300 650 140 678 135" marker-end="url(#ar)"/>
+</svg>
+</div>
+<div class="techs">
+<div><h3>Application native</h3><p>Go et SvelteKit réunis par Wails v3 : un seul binaire pour Windows, macOS et Linux, sans Electron ni navigateur embarqué à part.</p></div>
+<div><h3>Une base dans chaque fichier</h3><p>Un fichier <code>.lattis</code> est une archive qui contient une base SQLite en mode WAL : un seul écrivain, des lectures en parallèle, un enregistrement atomique et une récupération après plantage.</p></div>
+<div><h3>Formules et scripts</h3><p>Les formules sont traduites en SQL dès que possible. Les scripts Lua (gopher-lua) tournent en bac à sable, avec un délai et un bouton Arrêter qui les interrompent sans geler l'interface.</p></div>
+<div><h3>Assistants et MCP</h3><p>Un serveur MCP local, protégé par un jeton, laisse un assistant comme Claude lire et modifier le classeur ouvert, avec le même réglage de partage des données que l'assistant intégré.</p></div>
+<div><h3>Serveur Lattis</h3><p><code>lattisd</code> (Go) devant PostgreSQL 18, source de vérité : droits appliqués par la sécurité au niveau des lignes (RLS), connexion OAuth avec PKCE, administration web, édition dans le navigateur par <code>lattis-engine</code> sous <code>/app/</code>. Déploiement par Docker Compose ou chart Helm.</p></div>
+<div><h3>Hors ligne et NAS</h3><p>Chaque poste garde une copie SQLite locale et une file d'envoi rejouée au retour du réseau, avec gestion des conflits. Sans serveur, un classeur posé sur un NAS se partage par des journaux en ajout seul, un par poste.</p></div>
+</div>
+</div></section>
+
 <section class="alt" id="gratuit"><div class="w">
 <p class="kicker">Prix</p>
 <h2>Gratuit. Pour tout le monde.</h2>
@@ -269,7 +316,7 @@
 <p>Lattis est conçu par Be Lattis.</p>
 </div>
 <div class="fcols">
-<div><strong>Lattis</strong><a href="#fonctions">Fonctions</a><a href="#demo">Démo</a><a href="#gratuit">Gratuit</a><a href="#faq">FAQ</a></div>
+<div><strong>Lattis</strong><a href="#fonctions">Fonctions</a><a href="#demo">Démo</a><a href="#gratuit">Gratuit</a><a href="#faq">FAQ</a><a href="#architecture">Architecture</a></div>
 <div><strong>Contact</strong><a href="https://github.com/Be-Lattis/lattis-app">GitHub</a><a href="mailto:contact@lattis.be">contact@lattis.be</a></div>
 <div><strong>Langue</strong><a href="" hreflang="fr" lang="fr" data-lang="fr" aria-current="true">Français</a><a href="en/" hreflang="en" lang="en" data-lang="en">English</a><a href="zh/" hreflang="zh" lang="zh" data-lang="zh">简体中文</a><a href="es/" hreflang="es" lang="es" data-lang="es">Español</a><a href="de/" hreflang="de" lang="de" data-lang="de">Deutsch</a></div>
 <div><strong>Licences</strong><a href="https://github.com/Be-Lattis/lattis-app">Application · MPL-2.0</a><a href="https://github.com/Be-Lattis/lattis-server">Serveur · AGPL-3.0</a><a href="https://github.com/Be-Lattis/website">Site · MIT, CC BY 4.0</a></div>
