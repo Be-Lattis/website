@@ -150,5 +150,7 @@
   "dl.betaNote": "Lattis 目前处于测试阶段，可能仍有错误。请备份重要文件，并在 GitHub 上反馈问题。",
   "dl.winHint": "安装包暂未签名。如果 SmartScreen 显示「Windows 已保护你的电脑」，请点击「更多信息」，然后点击「仍要运行」。",
   "dl.macHint": "如果 macOS 首次拒绝打开应用，请前往「系统设置」中的「隐私与安全性」，点击「仍要打开」。",
-  "dl.sums": "SHA-256 校验和"
+  "dl.sums": "SHA-256 校验和",
+  "dl.portable": "便携版",
+  "dl.portHint": "便携版：仅一个可执行文件，无需安装，例如可放在 U 盘中使用。双击无法打开 .lattis 文件，也不会在开始菜单中添加快捷方式。需要 WebView2（Windows 11 和已更新的 Windows 10 均已内置）。"
 }

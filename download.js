@@ -23,7 +23,11 @@
   }
 
   // Ordre de préférence : premier format de data-ext, puis architecture de la machine.
+  // La version portable (exécutable seul) n'est jamais le choix par défaut : l'installeur passe avant.
+  function portable(a) { return /portable/i.test(a.name); }
+
   function pick(assets, exts) {
+    assets = assets.filter(function (a) { return !portable(a); });
     var arm = /arm|aarch64/i.test(navigator.userAgent);
     for (var i = 0; i < exts.length; i++) {
       var list = assets.filter(function (a) { return ext(a.name) === exts[i].toLowerCase(); });
@@ -77,10 +81,13 @@
           return;
         }
         var main = pick(files, exts);
+        files.sort(function (x, y) { return portable(x) - portable(y); });
         box.innerHTML = files.map(function (a) {
           return '<a class="btn' + (a === main ? '' : ' ghost') + '" href="' + a.browser_download_url + '" download>' +
-            '<svg class="ico"><use href="#i-down"/></svg>' + a.name.slice(a.name.lastIndexOf('.')) + '<small>' + size(a.size) + '</small></a>';
+            '<svg class="ico"><use href="#i-down"/></svg>' + (portable(a) ? (T.portable || 'Portable') : a.name.slice(a.name.lastIndexOf('.'))) + '<small>' + size(a.size) + '</small></a>';
         }).join('');
+        var ph = c.querySelector('.porthint');
+        if (ph && files.some(portable)) ph.hidden = false;
       });
       if (os && hero) {
         var card = document.querySelector('.os[data-os="' + os + '"]');

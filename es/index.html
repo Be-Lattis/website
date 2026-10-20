@@ -223,7 +223,7 @@
 <div class="betanote"><span class="pill">Beta</span><p>Lattis está en beta y todavía puede tener errores. Guarda una copia de tus archivos importantes e informa de los problemas en GitHub.</p></div>
 <p class="dlstate" id="dl-state">Buscando la última versión…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>Instalador .exe</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">Los instaladores aún no están firmados. Si SmartScreen muestra «Windows protegió su PC», haz clic en «Más información» y luego en «Ejecutar de todas formas».</p></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>Instalador .exe</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint porthint" hidden>Versión portable: solo el ejecutable, sin instalación, por ejemplo en una memoria USB. Los archivos .lattis no se abren con doble clic y no se añade ningún acceso directo al menú Inicio. Requiere WebView2, incluido en Windows 11 y en Windows 10 actualizado.</p><p class="hint">Los instaladores aún no están firmados. Si SmartScreen muestra «Windows protegió su PC», haz clic en «Más información» y luego en «Ejecutar de todas formas».</p></div>
 <div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>Imagen de disco DMG</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">Si macOS se niega a abrir la aplicación la primera vez, ve a Ajustes del Sistema, Privacidad y seguridad, y haz clic en «Abrir igualmente».</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage, paquetes .deb y .rpm</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
@@ -262,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis es software libre y gratuito. Los nombres y logotipos de Lattis y Be Lattis están reservados.</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"Descargar la beta para {os}",version:"Versión:",soon:"Todavía no hay ninguna versión publicada. La primera llegará pronto: sigue el repositorio de GitHub para enterarte.",error:"No se puede contactar con GitHub en este momento. Los archivos siguen disponibles en la página de versiones.",none:"Ver en GitHub",beta:"Beta"};</script>
+<script>window.LATTIS_DL={for:"Descargar la beta para {os}",version:"Versión:",soon:"Todavía no hay ninguna versión publicada. La primera llegará pronto: sigue el repositorio de GitHub para enterarte.",error:"No se puede contactar con GitHub en este momento. Los archivos siguen disponibles en la página de versiones.",none:"Ver en GitHub",beta:"Beta",portable:"Portable"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>

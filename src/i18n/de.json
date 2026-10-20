@@ -150,5 +150,7 @@
   "dl.betaNote": "Lattis ist in der Beta-Phase und kann noch Fehler enthalten. Bewahren Sie eine Kopie wichtiger Dateien auf und melden Sie Probleme auf GitHub.",
   "dl.winHint": "Die Installationsprogramme sind noch nicht signiert. Wenn SmartScreen „Der Computer wurde durch Windows geschützt“ anzeigt, klicken Sie auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“.",
   "dl.macHint": "Wenn macOS das Öffnen beim ersten Mal verweigert, gehen Sie zu Systemeinstellungen, Datenschutz & Sicherheit, und klicken Sie auf „Dennoch öffnen“.",
-  "dl.sums": "SHA-256-Prüfsummen"
+  "dl.sums": "SHA-256-Prüfsummen",
+  "dl.portable": "Portabel",
+  "dl.portHint": "Portable Version: nur die ausführbare Datei, ohne Installation, etwa auf einem USB-Stick. .lattis-Dateien öffnen sich nicht per Doppelklick, und es wird keine Verknüpfung im Startmenü angelegt. Benötigt WebView2, das in Windows 11 und aktuellem Windows 10 enthalten ist."
 }

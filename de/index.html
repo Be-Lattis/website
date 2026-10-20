@@ -223,7 +223,7 @@
 <div class="betanote"><span class="pill">Beta</span><p>Lattis ist in der Beta-Phase und kann noch Fehler enthalten. Bewahren Sie eine Kopie wichtiger Dateien auf und melden Sie Probleme auf GitHub.</p></div>
 <p class="dlstate" id="dl-state">Neueste Version wird gesucht…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe-Installationsprogramm</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">Die Installationsprogramme sind noch nicht signiert. Wenn SmartScreen „Der Computer wurde durch Windows geschützt“ anzeigt, klicken Sie auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“.</p></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe-Installationsprogramm</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint porthint" hidden>Portable Version: nur die ausführbare Datei, ohne Installation, etwa auf einem USB-Stick. .lattis-Dateien öffnen sich nicht per Doppelklick, und es wird keine Verknüpfung im Startmenü angelegt. Benötigt WebView2, das in Windows 11 und aktuellem Windows 10 enthalten ist.</p><p class="hint">Die Installationsprogramme sind noch nicht signiert. Wenn SmartScreen „Der Computer wurde durch Windows geschützt“ anzeigt, klicken Sie auf „Weitere Informationen“ und dann auf „Trotzdem ausführen“.</p></div>
 <div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG-Disk-Image</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">Wenn macOS das Öffnen beim ersten Mal verweigert, gehen Sie zu Systemeinstellungen, Datenschutz & Sicherheit, und klicken Sie auf „Dennoch öffnen“.</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage, .deb- und .rpm-Pakete</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
@@ -262,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis ist freie und kostenlose Software. Die Namen und Logos Lattis und Be Lattis bleiben vorbehalten.</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"Beta für {os} herunterladen",version:"Version:",soon:"Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",error:"GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",none:"Auf GitHub ansehen",beta:"Beta"};</script>
+<script>window.LATTIS_DL={for:"Beta für {os} herunterladen",version:"Version:",soon:"Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",error:"GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",none:"Auf GitHub ansehen",beta:"Beta",portable:"Portabel"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>

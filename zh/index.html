@@ -223,7 +223,7 @@
 <div class="betanote"><span class="pill">测试版</span><p>Lattis 目前处于测试阶段，可能仍有错误。请备份重要文件，并在 GitHub 上反馈问题。</p></div>
 <p class="dlstate" id="dl-state">正在查找最新版本…</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe 安装程序</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">安装包暂未签名。如果 SmartScreen 显示「Windows 已保护你的电脑」，请点击「更多信息」，然后点击「仍要运行」。</p></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>.exe 安装程序</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint porthint" hidden>便携版：仅一个可执行文件，无需安装，例如可放在 U 盘中使用。双击无法打开 .lattis 文件，也不会在开始菜单中添加快捷方式。需要 WebView2（Windows 11 和已更新的 Windows 10 均已内置）。</p><p class="hint">安装包暂未签名。如果 SmartScreen 显示「Windows 已保护你的电脑」，请点击「更多信息」，然后点击「仍要运行」。</p></div>
 <div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>DMG 磁盘映像</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">如果 macOS 首次拒绝打开应用，请前往「系统设置」中的「隐私与安全性」，点击「仍要打开」。</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>AppImage、.deb 和 .rpm 软件包</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
@@ -262,7 +262,7 @@
 <p class="copy">© 2026 Be Lattis · Lattis 是免费的自由软件。Lattis 和 Be Lattis 的名称与标志保留所有权利。</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"下载 {os} 测试版",version:"版本：",soon:"目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",error:"暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",none:"在 GitHub 上查看",beta:"测试版"};</script>
+<script>window.LATTIS_DL={for:"下载 {os} 测试版",version:"版本：",soon:"目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",error:"暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",none:"在 GitHub 上查看",beta:"测试版",portable:"便携版"};</script>
 <script src="../download.js" defer></script>
 </body>
 </html>

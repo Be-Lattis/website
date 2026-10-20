@@ -150,5 +150,7 @@
   "dl.betaNote": "Lattis is in beta and may still have bugs. Keep a copy of your important files and report problems on GitHub.",
   "dl.winHint": "The installers are not signed yet. If SmartScreen shows “Windows protected your PC”, click “More info” and then “Run anyway”.",
   "dl.macHint": "If macOS refuses to open the app the first time, go to System Settings, Privacy & Security, and click “Open Anyway”.",
-  "dl.sums": "SHA-256 checksums"
+  "dl.sums": "SHA-256 checksums",
+  "dl.portable": "Portable",
+  "dl.portHint": "Portable version: just the executable, no installation, for example on a USB stick. .lattis files won't open on double-click and no Start menu shortcut is added. Requires WebView2, included with Windows 11 and up-to-date Windows 10."
 }

@@ -218,7 +218,7 @@
 <div class="betanote"><span class="pill">{{dl.beta}}</span><p>{{dl.betaNote}}</p></div>
 <p class="dlstate" id="dl-state">{{dl.loading}}</p>
 <div class="oses">
-<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>{{dl.winReq}}</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint">{{dl.winHint}}</p></div>
+<div class="os" data-os="windows"><svg class="osi"><use href="#i-win"/></svg><h3>Windows</h3><p>{{dl.winReq}}</p><div class="files" data-ext="exe,msix,msi"></div><p class="hint porthint" hidden>{{dl.portHint}}</p><p class="hint">{{dl.winHint}}</p></div>
 <div class="os" data-os="mac"><svg class="osi"><use href="#i-apple"/></svg><h3>macOS</h3><p>{{dl.macReq}}</p><div class="files" data-ext="dmg,pkg"></div><p class="hint">{{dl.macHint}}</p></div>
 <div class="os" data-os="linux"><svg class="osi"><use href="#i-linux"/></svg><h3>Linux</h3><p>{{dl.linuxReq}}</p><div class="files" data-ext="AppImage,deb,rpm"></div></div>
 </div>
@@ -257,7 +257,7 @@
 <p class="copy">© 2026 Be Lattis · {{foot.rights}}</p>
 </div></footer>
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
-<script>window.LATTIS_DL={for:"{{dl.for}}",version:"{{dl.version}}",soon:"{{dl.soon}}",error:"{{dl.error}}",none:"{{dl.none}}",beta:"{{dl.beta}}"};</script>
+<script>window.LATTIS_DL={for:"{{dl.for}}",version:"{{dl.version}}",soon:"{{dl.soon}}",error:"{{dl.error}}",none:"{{dl.none}}",beta:"{{dl.beta}}",portable:"{{dl.portable}}"};</script>
 <script src="{{base}}download.js" defer></script>
 </body>
 </html>
