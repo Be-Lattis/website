@@ -284,11 +284,11 @@
 <rect class="ab srv" x="660" y="20" width="280" height="340" rx="16"/>
 <text class="at" x="680" y="52">Lattis-Server (selbst gehostet)</text>
 <rect class="ai" x="680" y="70" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">OAuth · PKCE · admin</text><text class="as" x="696" y="138">/app/ · lattis-engine</text>
+<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">Anmeldung · Verwaltung</text><text class="as" x="696" y="138">Web-Bearbeitung</text>
 <rect class="ai" x="680" y="200" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">maßgebliche Quelle</text><text class="as" x="696" y="268">RLS · NOTIFY</text>
+<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">maßgebliche Quelle</text><text class="as" x="696" y="268">Rechte</text>
 <path class="al" d="M800 148v50" marker-end="url(#ar)" marker-start="url(#ar)"/>
-<text class="as" x="808" y="178">Rechte</text>
+
 <path class="al" d="M300 175C340 150 350 95 386 85" marker-end="url(#ar)" marker-start="url(#ar)"/>
 <text class="al2" x="306" y="150">ohne Server</text>
 <path class="al" d="M300 280C450 280 520 240 678 240" marker-end="url(#ar)" marker-start="url(#ar)"/>
@@ -299,12 +299,12 @@
 </svg>
 </div>
 <div class="techs">
-<div><h3>Native Anwendung</h3><p>Go und SvelteKit, verbunden durch Wails v3: ein einziges Binary für Windows, macOS und Linux, ohne Electron und ohne eigenen eingebetteten Browser.</p></div>
-<div><h3>Eine Datenbank in jeder Datei</h3><p>Eine <code>.lattis</code>-Datei ist ein Archiv mit einer SQLite-Datenbank im WAL-Modus: ein Schreiber, parallele Lesezugriffe, atomares Speichern und Wiederherstellung nach einem Absturz.</p></div>
-<div><h3>Formeln und Skripte</h3><p>Formeln werden wann immer möglich in SQL übersetzt. Lua-Skripte (gopher-lua) laufen in einer Sandbox, mit Zeitlimit und einer Stopp-Schaltfläche, die sie unterbrechen, ohne die Oberfläche einzufrieren.</p></div>
-<div><h3>Assistenten und MCP</h3><p>Ein lokaler MCP-Server, geschützt durch ein Token, lässt einen Assistenten wie Claude die geöffnete Arbeitsmappe lesen und bearbeiten, mit derselben Datenfreigabe-Einstellung wie der integrierte Assistent.</p></div>
-<div><h3>Lattis-Server</h3><p><code>lattisd</code> (Go) vor PostgreSQL 18 als maßgeblicher Quelle: Rechte über Sicherheit auf Zeilenebene (RLS), OAuth-Anmeldung mit PKCE, Web-Administration, Bearbeitung im Browser über <code>lattis-engine</code> unter <code>/app/</code>. Bereitstellung per Docker Compose oder Helm-Chart.</p></div>
-<div><h3>Offline und NAS</h3><p>Jeder Rechner behält eine lokale SQLite-Kopie und eine Sende-Warteschlange, die bei Netzrückkehr nachgespielt wird, mit Konfliktbehandlung. Ohne Server wird eine Arbeitsmappe auf einem NAS über reine Anhänge-Journale geteilt, eines pro Rechner.</p></div>
+<div><h3>Native Anwendung</h3><p>Geschrieben in Go mit einer SvelteKit-Oberfläche, verbunden durch Wails. Eine echte Anwendung für Windows, macOS und Linux, leicht und schnell, ohne Electron.</p></div>
+<div><h3>Eine Datenbank in jeder Datei</h3><p>Jede <code>.lattis</code>-Datei enthält ihre eigene SQLite-Datenbank. Nichts zusätzlich zu installieren, und Ihre Daten bleiben bei der Datei.</p></div>
+<div><h3>Formeln und Skripte</h3><p>Berechnungen laufen über die SQL-Engine. Lua-Skripte laufen, ohne die Oberfläche je einzufrieren.</p></div>
+<div><h3>Assistenten und MCP</h3><p>Ein integrierter MCP-Server lässt einen Assistenten wie Claude an der geöffneten Arbeitsmappe arbeiten, wenn Sie ihn einschalten.</p></div>
+<div><h3>Lattis-Server</h3><p>Für die Teamarbeit ein Server, den Sie selbst betreiben. PostgreSQL 18 ist erforderlich; Docker oder Kubernetes sind möglich. Bearbeitung auch im Browser.</p></div>
+<div><h3>Offline und NAS</h3><p>Die Arbeit geht ohne Netz weiter und wird synchronisiert, sobald die Verbindung zurück ist. Ohne Server genügt ein freigegebener Ordner oder ein NAS für die Zusammenarbeit.</p></div>
 </div>
 </div></section>
 

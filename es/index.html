@@ -284,11 +284,11 @@
 <rect class="ab srv" x="660" y="20" width="280" height="340" rx="16"/>
 <text class="at" x="680" y="52">Servidor Lattis (autoalojado)</text>
 <rect class="ai" x="680" y="70" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">OAuth · PKCE · admin</text><text class="as" x="696" y="138">/app/ · lattis-engine</text>
+<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">inicio de sesión · administración</text><text class="as" x="696" y="138">edición web</text>
 <rect class="ai" x="680" y="200" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">fuente de verdad</text><text class="as" x="696" y="268">RLS · NOTIFY</text>
+<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">fuente de verdad</text><text class="as" x="696" y="268">permisos</text>
 <path class="al" d="M800 148v50" marker-end="url(#ar)" marker-start="url(#ar)"/>
-<text class="as" x="808" y="178">permisos</text>
+
 <path class="al" d="M300 175C340 150 350 95 386 85" marker-end="url(#ar)" marker-start="url(#ar)"/>
 <text class="al2" x="306" y="150">sin servidor</text>
 <path class="al" d="M300 280C450 280 520 240 678 240" marker-end="url(#ar)" marker-start="url(#ar)"/>
@@ -299,12 +299,12 @@
 </svg>
 </div>
 <div class="techs">
-<div><h3>Aplicación nativa</h3><p>Go y SvelteKit unidos por Wails v3: un solo binario para Windows, macOS y Linux, sin Electron ni navegador incrustado aparte.</p></div>
-<div><h3>Una base en cada archivo</h3><p>Un archivo <code>.lattis</code> es un archivo comprimido con una base SQLite en modo WAL: un solo escritor, lecturas en paralelo, guardado atómico y recuperación tras un cierre inesperado.</p></div>
-<div><h3>Fórmulas y scripts</h3><p>Las fórmulas se traducen a SQL siempre que es posible. Los scripts Lua (gopher-lua) se ejecutan en un entorno aislado, con un tiempo límite y un botón Detener que los interrumpen sin congelar la interfaz.</p></div>
-<div><h3>Asistentes y MCP</h3><p>Un servidor MCP local, protegido por un token, permite que un asistente como Claude lea y modifique el libro abierto, con el mismo ajuste de compartición de datos que el asistente integrado.</p></div>
-<div><h3>Servidor Lattis</h3><p><code>lattisd</code> (Go) delante de PostgreSQL 18, fuente de verdad: permisos aplicados por seguridad a nivel de fila (RLS), inicio de sesión OAuth con PKCE, administración web, edición en el navegador con <code>lattis-engine</code> en <code>/app/</code>. Despliegue con Docker Compose o un chart de Helm.</p></div>
-<div><h3>Sin conexión y NAS</h3><p>Cada equipo guarda una copia SQLite local y una cola de envío que se reproduce al volver la red, con gestión de conflictos. Sin servidor, un libro en un NAS se comparte mediante registros de solo anexado, uno por equipo.</p></div>
+<div><h3>Aplicación nativa</h3><p>Escrita en Go con una interfaz SvelteKit, unidas por Wails. Una aplicación real para Windows, macOS y Linux, ligera y rápida, sin Electron.</p></div>
+<div><h3>Una base en cada archivo</h3><p>Cada archivo <code>.lattis</code> contiene su propia base SQLite. Nada más que instalar, y tus datos viajan con el archivo.</p></div>
+<div><h3>Fórmulas y scripts</h3><p>Los cálculos se apoyan en el motor SQL. Los scripts Lua se ejecutan sin congelar nunca la interfaz.</p></div>
+<div><h3>Asistentes y MCP</h3><p>Un servidor MCP integrado permite que un asistente como Claude trabaje en el libro abierto, si lo activas.</p></div>
+<div><h3>Servidor Lattis</h3><p>Para trabajar en equipo, un servidor que alojas tú. Requiere PostgreSQL 18; admite Docker o Kubernetes. También se edita desde el navegador.</p></div>
+<div><h3>Sin conexión y NAS</h3><p>El trabajo sigue sin red y se sincroniza cuando vuelve la conexión. Sin servidor, basta una carpeta compartida o un NAS para trabajar entre varios.</p></div>
 </div>
 </div></section>
 

@@ -196,15 +196,16 @@
   "arch.l2": "登录",
   "arch.l3": "无需服务器",
   "arch.t1": "原生应用",
-  "arch.d1": "由 Wails v3 将 Go 与 SvelteKit 结合：Windows、macOS 和 Linux 各一个二进制文件，不依赖 Electron，也不额外内置浏览器。",
+  "arch.d1": "使用 Go 编写，界面采用 SvelteKit，由 Wails 整合。适用于 Windows、macOS 和 Linux 的真正原生应用，轻快流畅，不依赖 Electron。",
   "arch.t2": "每个文件都是数据库",
-  "arch.d2": "<code>.lattis</code> 文件是一个归档，内含 WAL 模式的 SQLite 数据库：单一写入者、并行读取、原子保存，并支持崩溃后恢复。",
+  "arch.d2": "每个 <code>.lattis</code> 文件都自带一个 SQLite 数据库。无需额外安装，数据随文件一起走。",
   "arch.t3": "公式与脚本",
-  "arch.d3": "公式会尽可能翻译为 SQL。Lua 脚本（gopher-lua）在沙箱中运行，超时限制和「停止」按钮可随时中断脚本，界面不会卡死。",
+  "arch.d3": "计算由 SQL 引擎完成。Lua 脚本运行时绝不会让界面卡住。",
   "arch.t4": "助手与 MCP",
-  "arch.d4": "本地 MCP 服务器通过令牌保护，让 Claude 等助手读取和修改当前打开的工作簿，并遵循与内置助手相同的数据共享设置。",
+  "arch.d4": "内置 MCP 服务器，开启后可让 Claude 等助手处理当前打开的工作簿。",
   "arch.t5": "Lattis 服务器",
-  "arch.d5": "<code>lattisd</code>（Go）位于 PostgreSQL 18 之前，后者是唯一数据源：权限由行级安全（RLS）执行，OAuth 登录采用 PKCE，提供网页管理，并通过 <code>/app/</code> 下的 <code>lattis-engine</code> 在浏览器中编辑。可使用 Docker Compose 或 Helm chart 部署。",
+  "arch.d5": "团队协作时使用自托管服务器。需要 PostgreSQL 18；支持 Docker 或 Kubernetes 部署。也可以在浏览器中编辑。",
   "arch.t6": "离线与 NAS",
-  "arch.d6": "每台电脑保留一份本地 SQLite 副本和发送队列，网络恢复后自动重放，并处理冲突。没有服务器时，放在 NAS 上的工作簿通过只追加的日志共享，每台电脑一份。"
+  "arch.d6": "断网时也能继续工作，联网后自动同步。没有服务器时，一个共享文件夹或 NAS 就足以多人协作。",
+  "arch.lattisdSub": "登录 · 管理"
 }

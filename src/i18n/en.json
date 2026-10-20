@@ -196,15 +196,16 @@
   "arch.l2": "sign-in",
   "arch.l3": "serverless",
   "arch.t1": "Native application",
-  "arch.d1": "Go and SvelteKit brought together by Wails v3: a single binary for Windows, macOS and Linux, without Electron or a bundled browser.",
+  "arch.d1": "Written in Go with a SvelteKit interface, brought together by Wails. A real application for Windows, macOS and Linux, light and fast, without Electron.",
   "arch.t2": "A database in every file",
-  "arch.d2": "A <code>.lattis</code> file is an archive holding a SQLite database in WAL mode: one writer, parallel reads, atomic saves and crash recovery.",
+  "arch.d2": "Every <code>.lattis</code> file holds its own SQLite database. Nothing else to install, and your data stays with the file.",
   "arch.t3": "Formulas and scripts",
-  "arch.d3": "Formulas are translated to SQL whenever possible. Lua scripts (gopher-lua) run in a sandbox, with a timeout and a Stop button that interrupt them without freezing the interface.",
+  "arch.d3": "Calculations run on the SQL engine. Lua scripts run without ever freezing the interface.",
   "arch.t4": "Assistants and MCP",
-  "arch.d4": "A local MCP server, protected by a token, lets an assistant such as Claude read and edit the open workbook, under the same data-sharing setting as the built-in assistant.",
+  "arch.d4": "A built-in MCP server lets an assistant such as Claude work on the open workbook, if you turn it on.",
   "arch.t5": "Lattis Server",
-  "arch.d5": "<code>lattisd</code> (Go) in front of PostgreSQL 18 as the source of truth: permissions enforced by row-level security (RLS), OAuth sign-in with PKCE, web administration, in-browser editing through <code>lattis-engine</code> under <code>/app/</code>. Deploy with Docker Compose or a Helm chart.",
+  "arch.d5": "For teamwork, a server you host yourself. PostgreSQL 18 is required; Docker or Kubernetes are supported. Editing from the browser too.",
   "arch.t6": "Offline and NAS",
-  "arch.d6": "Each machine keeps a local SQLite copy and an outgoing queue replayed when the network comes back, with conflict handling. Without a server, a workbook on a NAS is shared through append-only journals, one per machine."
+  "arch.d6": "Work carries on without a network and syncs when the connection returns. Without a server, a plain shared folder or NAS is enough to work together.",
+  "arch.lattisdSub": "sign-in · administration"
 }

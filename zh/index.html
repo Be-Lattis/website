@@ -284,11 +284,11 @@
 <rect class="ab srv" x="660" y="20" width="280" height="340" rx="16"/>
 <text class="at" x="680" y="52">Lattis 服务器（自托管）</text>
 <rect class="ai" x="680" y="70" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">OAuth · PKCE · admin</text><text class="as" x="696" y="138">/app/ · lattis-engine</text>
+<text class="an" x="696" y="98">lattisd (Go)</text><text class="as" x="696" y="120">登录 · 管理</text><text class="as" x="696" y="138">网页编辑</text>
 <rect class="ai" x="680" y="200" width="240" height="78" rx="10"/>
-<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">唯一数据源</text><text class="as" x="696" y="268">RLS · NOTIFY</text>
+<text class="an" x="696" y="228">PostgreSQL 18</text><text class="as" x="696" y="250">唯一数据源</text><text class="as" x="696" y="268">权限</text>
 <path class="al" d="M800 148v50" marker-end="url(#ar)" marker-start="url(#ar)"/>
-<text class="as" x="808" y="178">权限</text>
+
 <path class="al" d="M300 175C340 150 350 95 386 85" marker-end="url(#ar)" marker-start="url(#ar)"/>
 <text class="al2" x="306" y="150">无需服务器</text>
 <path class="al" d="M300 280C450 280 520 240 678 240" marker-end="url(#ar)" marker-start="url(#ar)"/>
@@ -299,12 +299,12 @@
 </svg>
 </div>
 <div class="techs">
-<div><h3>原生应用</h3><p>由 Wails v3 将 Go 与 SvelteKit 结合：Windows、macOS 和 Linux 各一个二进制文件，不依赖 Electron，也不额外内置浏览器。</p></div>
-<div><h3>每个文件都是数据库</h3><p><code>.lattis</code> 文件是一个归档，内含 WAL 模式的 SQLite 数据库：单一写入者、并行读取、原子保存，并支持崩溃后恢复。</p></div>
-<div><h3>公式与脚本</h3><p>公式会尽可能翻译为 SQL。Lua 脚本（gopher-lua）在沙箱中运行，超时限制和「停止」按钮可随时中断脚本，界面不会卡死。</p></div>
-<div><h3>助手与 MCP</h3><p>本地 MCP 服务器通过令牌保护，让 Claude 等助手读取和修改当前打开的工作簿，并遵循与内置助手相同的数据共享设置。</p></div>
-<div><h3>Lattis 服务器</h3><p><code>lattisd</code>（Go）位于 PostgreSQL 18 之前，后者是唯一数据源：权限由行级安全（RLS）执行，OAuth 登录采用 PKCE，提供网页管理，并通过 <code>/app/</code> 下的 <code>lattis-engine</code> 在浏览器中编辑。可使用 Docker Compose 或 Helm chart 部署。</p></div>
-<div><h3>离线与 NAS</h3><p>每台电脑保留一份本地 SQLite 副本和发送队列，网络恢复后自动重放，并处理冲突。没有服务器时，放在 NAS 上的工作簿通过只追加的日志共享，每台电脑一份。</p></div>
+<div><h3>原生应用</h3><p>使用 Go 编写，界面采用 SvelteKit，由 Wails 整合。适用于 Windows、macOS 和 Linux 的真正原生应用，轻快流畅，不依赖 Electron。</p></div>
+<div><h3>每个文件都是数据库</h3><p>每个 <code>.lattis</code> 文件都自带一个 SQLite 数据库。无需额外安装，数据随文件一起走。</p></div>
+<div><h3>公式与脚本</h3><p>计算由 SQL 引擎完成。Lua 脚本运行时绝不会让界面卡住。</p></div>
+<div><h3>助手与 MCP</h3><p>内置 MCP 服务器，开启后可让 Claude 等助手处理当前打开的工作簿。</p></div>
+<div><h3>Lattis 服务器</h3><p>团队协作时使用自托管服务器。需要 PostgreSQL 18；支持 Docker 或 Kubernetes 部署。也可以在浏览器中编辑。</p></div>
+<div><h3>离线与 NAS</h3><p>断网时也能继续工作，联网后自动同步。没有服务器时，一个共享文件夹或 NAS 就足以多人协作。</p></div>
 </div>
 </div></section>
 

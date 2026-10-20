@@ -196,15 +196,16 @@
   "arch.l2": "Anmeldung",
   "arch.l3": "ohne Server",
   "arch.t1": "Native Anwendung",
-  "arch.d1": "Go und SvelteKit, verbunden durch Wails v3: ein einziges Binary für Windows, macOS und Linux, ohne Electron und ohne eigenen eingebetteten Browser.",
+  "arch.d1": "Geschrieben in Go mit einer SvelteKit-Oberfläche, verbunden durch Wails. Eine echte Anwendung für Windows, macOS und Linux, leicht und schnell, ohne Electron.",
   "arch.t2": "Eine Datenbank in jeder Datei",
-  "arch.d2": "Eine <code>.lattis</code>-Datei ist ein Archiv mit einer SQLite-Datenbank im WAL-Modus: ein Schreiber, parallele Lesezugriffe, atomares Speichern und Wiederherstellung nach einem Absturz.",
+  "arch.d2": "Jede <code>.lattis</code>-Datei enthält ihre eigene SQLite-Datenbank. Nichts zusätzlich zu installieren, und Ihre Daten bleiben bei der Datei.",
   "arch.t3": "Formeln und Skripte",
-  "arch.d3": "Formeln werden wann immer möglich in SQL übersetzt. Lua-Skripte (gopher-lua) laufen in einer Sandbox, mit Zeitlimit und einer Stopp-Schaltfläche, die sie unterbrechen, ohne die Oberfläche einzufrieren.",
+  "arch.d3": "Berechnungen laufen über die SQL-Engine. Lua-Skripte laufen, ohne die Oberfläche je einzufrieren.",
   "arch.t4": "Assistenten und MCP",
-  "arch.d4": "Ein lokaler MCP-Server, geschützt durch ein Token, lässt einen Assistenten wie Claude die geöffnete Arbeitsmappe lesen und bearbeiten, mit derselben Datenfreigabe-Einstellung wie der integrierte Assistent.",
+  "arch.d4": "Ein integrierter MCP-Server lässt einen Assistenten wie Claude an der geöffneten Arbeitsmappe arbeiten, wenn Sie ihn einschalten.",
   "arch.t5": "Lattis-Server",
-  "arch.d5": "<code>lattisd</code> (Go) vor PostgreSQL 18 als maßgeblicher Quelle: Rechte über Sicherheit auf Zeilenebene (RLS), OAuth-Anmeldung mit PKCE, Web-Administration, Bearbeitung im Browser über <code>lattis-engine</code> unter <code>/app/</code>. Bereitstellung per Docker Compose oder Helm-Chart.",
+  "arch.d5": "Für die Teamarbeit ein Server, den Sie selbst betreiben. PostgreSQL 18 ist erforderlich; Docker oder Kubernetes sind möglich. Bearbeitung auch im Browser.",
   "arch.t6": "Offline und NAS",
-  "arch.d6": "Jeder Rechner behält eine lokale SQLite-Kopie und eine Sende-Warteschlange, die bei Netzrückkehr nachgespielt wird, mit Konfliktbehandlung. Ohne Server wird eine Arbeitsmappe auf einem NAS über reine Anhänge-Journale geteilt, eines pro Rechner."
+  "arch.d6": "Die Arbeit geht ohne Netz weiter und wird synchronisiert, sobald die Verbindung zurück ist. Ohne Server genügt ein freigegebener Ordner oder ein NAS für die Zusammenarbeit.",
+  "arch.lattisdSub": "Anmeldung · Verwaltung"
 }

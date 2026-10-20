@@ -196,15 +196,16 @@
   "arch.l2": "connexion",
   "arch.l3": "sans serveur",
   "arch.t1": "Application native",
-  "arch.d1": "Go et SvelteKit réunis par Wails v3 : un seul binaire pour Windows, macOS et Linux, sans Electron ni navigateur embarqué à part.",
+  "arch.d1": "Écrite en Go avec une interface SvelteKit, assemblées par Wails. Une vraie application pour Windows, macOS et Linux, légère et rapide, sans Electron.",
   "arch.t2": "Une base dans chaque fichier",
-  "arch.d2": "Un fichier <code>.lattis</code> est une archive qui contient une base SQLite en mode WAL : un seul écrivain, des lectures en parallèle, un enregistrement atomique et une récupération après plantage.",
+  "arch.d2": "Chaque fichier <code>.lattis</code> contient sa propre base SQLite. Rien à installer à côté, et vos données restent avec le fichier.",
   "arch.t3": "Formules et scripts",
-  "arch.d3": "Les formules sont traduites en SQL dès que possible. Les scripts Lua (gopher-lua) tournent en bac à sable, avec un délai et un bouton Arrêter qui les interrompent sans geler l'interface.",
+  "arch.d3": "Les calculs s'appuient sur le moteur SQL. Les scripts Lua s'exécutent sans jamais geler l'interface.",
   "arch.t4": "Assistants et MCP",
-  "arch.d4": "Un serveur MCP local, protégé par un jeton, laisse un assistant comme Claude lire et modifier le classeur ouvert, avec le même réglage de partage des données que l'assistant intégré.",
+  "arch.d4": "Un serveur MCP intégré permet à un assistant comme Claude de travailler sur le classeur ouvert, si vous l'activez.",
   "arch.t5": "Serveur Lattis",
-  "arch.d5": "<code>lattisd</code> (Go) devant PostgreSQL 18, source de vérité : droits appliqués par la sécurité au niveau des lignes (RLS), connexion OAuth avec PKCE, administration web, édition dans le navigateur par <code>lattis-engine</code> sous <code>/app/</code>. Déploiement par Docker Compose ou chart Helm.",
+  "arch.d5": "Pour travailler à plusieurs, un serveur à installer chez vous. PostgreSQL 18 est requis ; Docker ou Kubernetes sont possibles. Édition aussi depuis le navigateur.",
   "arch.t6": "Hors ligne et NAS",
-  "arch.d6": "Chaque poste garde une copie SQLite locale et une file d'envoi rejouée au retour du réseau, avec gestion des conflits. Sans serveur, un classeur posé sur un NAS se partage par des journaux en ajout seul, un par poste."
+  "arch.d6": "Le travail continue sans réseau et se synchronise au retour de la connexion. Sans serveur, un simple dossier partagé ou un NAS suffit pour travailler à plusieurs.",
+  "arch.lattisdSub": "connexion · administration"
 }
