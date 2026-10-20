@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lattis, the free spreadsheet with the rigor of a database</title>
-<meta name="description" content="Lattis is a free, local-first desktop spreadsheet: the flexibility of Excel, the rigor of a SQLite database, SQL, Lua scripts and connections to your databases.">
+<title>Lattis, the free spreadsheet that is smoother than Excel, with the power of a database</title>
+<meta name="description" content="Lattis is a free desktop spreadsheet, smoother than Excel, that adds everything a database can do: SQL, instant pivot tables, connections to your databases and Lua scripts.">
 <link rel="canonical" href="https://www.lattis.be/en/">
 <link rel="alternate" hreflang="fr" href="https://www.lattis.be/">
 <link rel="alternate" hreflang="en" href="https://www.lattis.be/en/">
@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="es" href="https://www.lattis.be/es/">
 <link rel="alternate" hreflang="de" href="https://www.lattis.be/de/">
 <link rel="alternate" hreflang="x-default" href="https://www.lattis.be/">
-<meta property="og:title" content="Lattis, the free spreadsheet with the rigor of a database">
-<meta property="og:description" content="Lattis is a free, local-first desktop spreadsheet: the flexibility of Excel, the rigor of a SQLite database, SQL, Lua scripts and connections to your databases.">
+<meta property="og:title" content="Lattis, the free spreadsheet that is smoother than Excel, with the power of a database">
+<meta property="og:description" content="Lattis is a free desktop spreadsheet, smoother than Excel, that adds everything a database can do: SQL, instant pivot tables, connections to your databases and Lua scripts.">
 <meta property="og:image" content="https://www.lattis.be/assets/11-demo-ouverture.png">
 <meta property="og:locale" content="en_US">
 <meta name="theme-color" content="#217346">
@@ -54,7 +54,7 @@
 <header class="top"><div class="w">
 <a class="brand" href="../en/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
 <nav class="nav">
-<a href="#comment">How it works</a><a href="#fonctions">Features</a><a href="#demo">Demo</a><a href="#gratuit">Free</a><a href="#faq">FAQ</a><a href="#telecharger">Download</a>
+<a href="#comment">How it works</a><a href="#ergonomie">Ease of use</a><a href="#fonctions">Features</a><a href="#demo">Demo</a><a href="#gratuit">Free</a><a href="#faq">FAQ</a><a href="#telecharger">Download</a>
 </nav>
 <div class="tools">
 <details class="lang"><summary aria-label="Language"><svg class="ico"><use href="#i-globe"/></svg><span>EN</span></summary>
@@ -68,8 +68,8 @@
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
 <span class="badge"><span class="dot"></span>Public beta available · Free for everyone</span>
-<h1>The flexibility of a spreadsheet.<br><span class="accent">The rigor of a database.</span></h1>
-<p class="sub">Lattis is a fast, modern desktop spreadsheet. You type just like in Excel, and it stores your data in real SQLite tables, on your own computer. And it stays free, for everyone.</p>
+<h1>A spreadsheet smoother than Excel.<br><span class="accent">With the power of a database.</span></h1>
+<p class="sub">Keep your Excel habits, only simpler and faster. And behind every table, a real SQLite database unlocks what Excel cannot do: SQL queries, instant pivot tables, connections to your databases, Lua scripts. Free, for everyone.</p>
 <div class="ctas">
 <a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Download the beta</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Watch the demo</a>
@@ -90,7 +90,7 @@
 <span><svg class="ico"><use href="#i-heart"/></svg>100% free</span>
 <span><svg class="ico"><use href="#i-lock"/></svg>Your data stays with you</span>
 <span><svg class="ico"><use href="#i-grid"/></svg>Windows, macOS and Linux</span>
-<span><svg class="ico"><use href="#i-check"/></svg>Familiar Excel habits</span>
+<span><svg class="ico"><use href="#i-check"/></svg>Smoother than Excel</span>
 </div></div>
 
 <section id="comment"><div class="w">
@@ -123,7 +123,22 @@
 </div>
 </div></section>
 
-<section class="alt" id="demo"><div class="w">
+<section class="alt" id="ergonomie"><div class="w">
+<p class="kicker">Ease of use</p>
+<h2>Simpler and smoother than Excel</h2>
+<p class="lead">The same gestures, fewer steps. Lattis takes care of what Excel leaves you to do by hand.</p>
+<div class="ergo">
+<div class="erow head"><span></span><span class="ex">Excel</span><span class="el">Lattis</span></div>
+<div class="erow"><span class="ek">Create a table</span><span class="ex" data-l="Excel">Format as Table, check the range, rename it</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Type your data: the table is detected, framed and named for you</span></span></div>
+<div class="erow"><span class="ek">Look up a value</span><span class="ex" data-l="Excel"><code>=VLOOKUP(A2,Customers!A:D,3,FALSE)</code></span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span><code>=REFERENCE(Customers, City, A2)</code>, readable, no column number</span></span></div>
+<div class="erow"><span class="ek">Column formula</span><span class="ex" data-l="Excel">Fill it down and check it follows new rows</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>A calculated column applies to every row automatically</span></span></div>
+<div class="erow"><span class="ek">Data types</span><span class="ex" data-l="Excel">A date or a code can change format without warning</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Every column has a type, detected as you type and easy to change</span></span></div>
+<div class="erow"><span class="ek">Analyze</span><span class="ex" data-l="Excel">Pivot tables you refresh by hand</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>SQL and instant pivot tables, up to date as soon as data changes</span></span></div>
+<div class="erow"><span class="ek">Automate</span><span class="ex" data-l="Excel">VBA macros that can freeze the workbook</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Lua scripts with a built-in reference and a safeguard against infinite loops</span></span></div>
+</div>
+</div></section>
+
+<section id="demo"><div class="w">
 <p class="kicker">Demo</p>
 <h2>See Lattis in action</h2>
 <p class="lead">Short videos covering the essentials. They are coming with the first public releases.</p>
@@ -139,10 +154,10 @@
 </div>
 </div></section>
 
-<section id="fonctions"><div class="w">
+<section class="alt" id="fonctions"><div class="w">
 <p class="kicker">Features</p>
-<h2>Everything you need to analyze</h2>
-<p class="lead">Excel's most used features, powered by SQLite.</p>
+<h2>Everything Excel doesn't do</h2>
+<p class="lead">Every table is a real SQLite table. You keep the grid, and you gain everything a database makes possible.</p>
 <div class="feats">
 <div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>Infinite canvas</h3><p>Several independent tables per sheet, each framed by a thin border. If one starts in A1, the sheet tab takes its name.</p></div>
 <div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>Typed columns</h3><p>Text, integer, decimal, date, boolean. The type is detected as you type, never blocks your input, and can always be changed.</p></div>
@@ -172,7 +187,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="connexions"><div class="w">
+<section id="connexions"><div class="w">
 <p class="kicker">Connections</p>
 <h2>Connected to your databases</h2>
 <p class="lead">Import and refresh external data, Power Query style. Passwords stay in your computer's keychain.</p>
@@ -184,7 +199,7 @@
 </div>
 </div></section>
 
-<section id="gratuit"><div class="w">
+<section class="alt" id="gratuit"><div class="w">
 <p class="kicker">Pricing</p>
 <h2>Free. For everyone.</h2>
 <p class="lead">No Pro edition, no subscription, no row limit. Lattis is free for individuals and companies alike, and it will stay that way.</p>
@@ -216,7 +231,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="telecharger"><div class="w">
+<section id="telecharger"><div class="w">
 <p class="kicker">Download</p>
 <h2>Install Lattis</h2>
 <p class="lead">The button automatically picks the right installer for your system from the latest release.</p>
@@ -230,7 +245,7 @@
 <p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">All releases and release notes on GitHub</a><a id="dl-sums" hidden>SHA-256 checksums</a></p>
 </div></section>
 
-<section id="faq"><div class="w narrow">
+<section class="alt" id="faq"><div class="w narrow">
 <h2>Frequently asked questions</h2>
 <details><summary>Is Lattis really free?</summary><p>Yes. Every feature is free, for personal and professional use, with no subscription and no Pro edition. The project is funded by company donations, partnerships, training and business support.</p></details>
 <details><summary>Where is my data stored?</summary><p>On your computer. A workbook is a <code>.lattis</code> file containing a SQLite database. Nothing goes to a server unless you connect an external database yourself.</p></details>
@@ -242,7 +257,7 @@
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
-<h2>Ready to bring rigor to your spreadsheets?</h2>
+<h2>Ready for a smoother, more powerful spreadsheet?</h2>
 <p>Try the beta and tell us what you think on GitHub.</p>
 <div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Download the beta</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Follow Lattis on GitHub</a></div>
 </div></section>

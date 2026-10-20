@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lattis：拥有数据库严谨性的免费电子表格</title>
-<meta name="description" content="Lattis 是一款免费、本地优先的桌面电子表格：兼具 Excel 的灵活与 SQLite 数据库的严谨，支持 SQL、Lua 脚本，并可连接您的数据库。">
+<title>Lattis：比 Excel 更流畅、拥有数据库能力的免费电子表格</title>
+<meta name="description" content="Lattis 是一款免费的桌面电子表格，比 Excel 更流畅，并带来数据库的全部能力：SQL、即时数据透视表、连接您的数据库以及 Lua 脚本。">
 <link rel="canonical" href="https://www.lattis.be/zh/">
 <link rel="alternate" hreflang="fr" href="https://www.lattis.be/">
 <link rel="alternate" hreflang="en" href="https://www.lattis.be/en/">
@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="es" href="https://www.lattis.be/es/">
 <link rel="alternate" hreflang="de" href="https://www.lattis.be/de/">
 <link rel="alternate" hreflang="x-default" href="https://www.lattis.be/">
-<meta property="og:title" content="Lattis：拥有数据库严谨性的免费电子表格">
-<meta property="og:description" content="Lattis 是一款免费、本地优先的桌面电子表格：兼具 Excel 的灵活与 SQLite 数据库的严谨，支持 SQL、Lua 脚本，并可连接您的数据库。">
+<meta property="og:title" content="Lattis：比 Excel 更流畅、拥有数据库能力的免费电子表格">
+<meta property="og:description" content="Lattis 是一款免费的桌面电子表格，比 Excel 更流畅，并带来数据库的全部能力：SQL、即时数据透视表、连接您的数据库以及 Lua 脚本。">
 <meta property="og:image" content="https://www.lattis.be/assets/11-demo-ouverture.png">
 <meta property="og:locale" content="zh_CN">
 <meta name="theme-color" content="#217346">
@@ -54,7 +54,7 @@
 <header class="top"><div class="w">
 <a class="brand" href="../zh/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
 <nav class="nav">
-<a href="#comment">原理</a><a href="#fonctions">功能</a><a href="#demo">演示</a><a href="#gratuit">免费</a><a href="#faq">常见问题</a><a href="#telecharger">下载</a>
+<a href="#comment">原理</a><a href="#ergonomie">易用性</a><a href="#fonctions">功能</a><a href="#demo">演示</a><a href="#gratuit">免费</a><a href="#faq">常见问题</a><a href="#telecharger">下载</a>
 </nav>
 <div class="tools">
 <details class="lang"><summary aria-label="语言"><svg class="ico"><use href="#i-globe"/></svg><span>ZH</span></summary>
@@ -68,8 +68,8 @@
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
 <span class="badge"><span class="dot"></span>公开测试版已发布 · 人人免费</span>
-<h1>电子表格的灵活。<br><span class="accent">数据库的严谨。</span></h1>
-<p class="sub">Lattis 是一款现代、快速的桌面电子表格。您像在 Excel 中一样输入，它会把数据存入真正的 SQLite 表，保存在您自己的电脑上。而且它对所有人永久免费。</p>
+<h1>比 Excel 更流畅的电子表格。<br><span class="accent">拥有数据库的强大能力。</span></h1>
+<p class="sub">保留您熟悉的 Excel 操作习惯，却更简单、更快速。每个表格背后都是真正的 SQLite 数据库，带来 Excel 做不到的能力：SQL 查询、即时数据透视表、连接您的数据库、Lua 脚本。人人免费。</p>
 <div class="ctas">
 <a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>下载测试版</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>观看演示</a>
@@ -90,7 +90,7 @@
 <span><svg class="ico"><use href="#i-heart"/></svg>完全免费</span>
 <span><svg class="ico"><use href="#i-lock"/></svg>数据留在您身边</span>
 <span><svg class="ico"><use href="#i-grid"/></svg>Windows、macOS 和 Linux</span>
-<span><svg class="ico"><use href="#i-check"/></svg>延续 Excel 的使用习惯</span>
+<span><svg class="ico"><use href="#i-check"/></svg>比 Excel 更流畅</span>
 </div></div>
 
 <section id="comment"><div class="w">
@@ -123,7 +123,22 @@
 </div>
 </div></section>
 
-<section class="alt" id="demo"><div class="w">
+<section class="alt" id="ergonomie"><div class="w">
+<p class="kicker">易用性</p>
+<h2>比 Excel 更简单、更流畅</h2>
+<p class="lead">同样的操作，更少的步骤。Excel 需要您手动完成的事，Lattis 替您处理。</p>
+<div class="ergo">
+<div class="erow head"><span></span><span class="ex">Excel</span><span class="el">Lattis</span></div>
+<div class="erow"><span class="ek">创建表格</span><span class="ex" data-l="Excel">套用表格格式、检查区域、重新命名</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>直接输入数据：表格会被自动识别、加框并命名</span></span></div>
+<div class="erow"><span class="ek">查找数值</span><span class="ex" data-l="Excel"><code>=VLOOKUP(A2,客户!A:D,3,FALSE)</code></span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span><code>=REFERENCE(客户, 城市, A2)</code>，清晰易读，无需列号</span></span></div>
+<div class="erow"><span class="ek">整列公式</span><span class="ex" data-l="Excel">向下填充，并检查新行是否被覆盖</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>计算列会自动应用到所有行</span></span></div>
+<div class="erow"><span class="ek">数据类型</span><span class="ex" data-l="Excel">日期或编号可能在不知不觉中改变格式</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>每列都有类型，输入时自动识别，可随时修改</span></span></div>
+<div class="erow"><span class="ek">分析</span><span class="ex" data-l="Excel">需要手动刷新的数据透视表</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>SQL 和即时数据透视表，数据一变化就立即更新</span></span></div>
+<div class="erow"><span class="ek">自动化</span><span class="ex" data-l="Excel">可能导致工作簿卡死的 VBA 宏</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>带内置参考和死循环保护的 Lua 脚本</span></span></div>
+</div>
+</div></section>
+
+<section id="demo"><div class="w">
 <p class="kicker">演示</p>
 <h2>看看 Lattis 如何工作</h2>
 <p class="lead">用几段短视频了解核心功能。视频将随首批公开版本一同发布。</p>
@@ -139,10 +154,10 @@
 </div>
 </div></section>
 
-<section id="fonctions"><div class="w">
+<section class="alt" id="fonctions"><div class="w">
 <p class="kicker">功能</p>
-<h2>分析所需，一应俱全</h2>
-<p class="lead">Excel 最常用的功能，由 SQLite 提供动力。</p>
+<h2>Excel 做不到的，Lattis 都能做</h2>
+<p class="lead">每个表格都是真正的 SQLite 表。您保留熟悉的网格，同时获得数据库带来的一切可能。</p>
 <div class="feats">
 <div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>无限画布</h3><p>每个工作表可容纳多个独立表格，各自带有细边框。若表格从 A1 开始，工作表标签将采用它的名称。</p></div>
 <div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>强类型列</h3><p>文本、整数、小数、日期、布尔值。类型在输入时自动识别，从不阻碍输入，并可随时修改。</p></div>
@@ -172,7 +187,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="connexions"><div class="w">
+<section id="connexions"><div class="w">
 <p class="kicker">连接</p>
 <h2>连接您的数据库</h2>
 <p class="lead">像 Power Query 一样导入并刷新外部数据。密码保存在您电脑的钥匙串中。</p>
@@ -184,7 +199,7 @@
 </div>
 </div></section>
 
-<section id="gratuit"><div class="w">
+<section class="alt" id="gratuit"><div class="w">
 <p class="kicker">价格</p>
 <h2>免费，面向所有人。</h2>
 <p class="lead">没有专业版，没有订阅，没有行数限制。Lattis 对个人和企业都免费，并将一直免费。</p>
@@ -216,7 +231,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="telecharger"><div class="w">
+<section id="telecharger"><div class="w">
 <p class="kicker">下载</p>
 <h2>安装 Lattis</h2>
 <p class="lead">按钮会根据最新发布的版本，自动为您的系统选择合适的安装包。</p>
@@ -230,7 +245,7 @@
 <p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">在 GitHub 上查看所有版本及更新说明</a><a id="dl-sums" hidden>SHA-256 校验和</a></p>
 </div></section>
 
-<section id="faq"><div class="w narrow">
+<section class="alt" id="faq"><div class="w narrow">
 <h2>常见问题</h2>
 <details><summary>Lattis 真的免费吗？</summary><p>是的。所有功能均免费，个人和商业用途皆可，没有订阅，也没有专业版。项目依靠企业捐赠、合作伙伴、培训和企业服务维持。</p></details>
 <details><summary>我的数据存放在哪里？</summary><p>在您的电脑上。每个工作簿是一个包含 SQLite 数据库的 <code>.lattis</code> 文件。除非您主动连接外部数据库，否则不会有任何数据发送到服务器。</p></details>
@@ -242,7 +257,7 @@
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
-<h2>准备好让表格更严谨了吗？</h2>
+<h2>准备好使用更流畅、更强大的电子表格了吗？</h2>
 <p>试用测试版，并在 GitHub 上告诉我们您的想法。</p>
 <div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>下载测试版</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>在 GitHub 上关注 Lattis</a></div>
 </div></section>

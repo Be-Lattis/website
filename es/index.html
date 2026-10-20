@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Lattis, la hoja de cálculo gratuita con el rigor de una base de datos</title>
-<meta name="description" content="Lattis es una hoja de cálculo de escritorio gratuita y local-first: la flexibilidad de Excel, el rigor de una base SQLite, SQL, scripts Lua y conexiones a tus bases de datos.">
+<title>Lattis, la hoja de cálculo gratuita más fluida que Excel, con la potencia de una base de datos</title>
+<meta name="description" content="Lattis es una hoja de cálculo de escritorio gratuita, más fluida que Excel, que añade todo lo que sabe hacer una base de datos: SQL, tablas dinámicas instantáneas, conexiones a tus bases y scripts Lua.">
 <link rel="canonical" href="https://www.lattis.be/es/">
 <link rel="alternate" hreflang="fr" href="https://www.lattis.be/">
 <link rel="alternate" hreflang="en" href="https://www.lattis.be/en/">
@@ -12,8 +12,8 @@
 <link rel="alternate" hreflang="es" href="https://www.lattis.be/es/">
 <link rel="alternate" hreflang="de" href="https://www.lattis.be/de/">
 <link rel="alternate" hreflang="x-default" href="https://www.lattis.be/">
-<meta property="og:title" content="Lattis, la hoja de cálculo gratuita con el rigor de una base de datos">
-<meta property="og:description" content="Lattis es una hoja de cálculo de escritorio gratuita y local-first: la flexibilidad de Excel, el rigor de una base SQLite, SQL, scripts Lua y conexiones a tus bases de datos.">
+<meta property="og:title" content="Lattis, la hoja de cálculo gratuita más fluida que Excel, con la potencia de una base de datos">
+<meta property="og:description" content="Lattis es una hoja de cálculo de escritorio gratuita, más fluida que Excel, que añade todo lo que sabe hacer una base de datos: SQL, tablas dinámicas instantáneas, conexiones a tus bases y scripts Lua.">
 <meta property="og:image" content="https://www.lattis.be/assets/11-demo-ouverture.png">
 <meta property="og:locale" content="es_ES">
 <meta name="theme-color" content="#217346">
@@ -54,7 +54,7 @@
 <header class="top"><div class="w">
 <a class="brand" href="../es/"><img src="../assets/lattis-icone.svg" alt="" width="30" height="30">Lattis</a>
 <nav class="nav">
-<a href="#comment">Cómo funciona</a><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a><a href="#telecharger">Descargar</a>
+<a href="#comment">Cómo funciona</a><a href="#ergonomie">Ergonomía</a><a href="#fonctions">Funciones</a><a href="#demo">Demo</a><a href="#gratuit">Gratis</a><a href="#faq">Preguntas</a><a href="#telecharger">Descargar</a>
 </nav>
 <div class="tools">
 <details class="lang"><summary aria-label="Idioma"><svg class="ico"><use href="#i-globe"/></svg><span>ES</span></summary>
@@ -68,8 +68,8 @@
 <div class="bg-grid" aria-hidden="true"></div>
 <div class="w">
 <span class="badge"><span class="dot"></span>Beta pública disponible · Gratis para todos</span>
-<h1>La flexibilidad de una hoja de cálculo.<br><span class="accent">El rigor de una base de datos.</span></h1>
-<p class="sub">Lattis es una hoja de cálculo de escritorio moderna y rápida. Escribes como en Excel y guarda tus datos en tablas SQLite reales, en tu propio ordenador. Y sigue siendo gratis, para todo el mundo.</p>
+<h1>Una hoja de cálculo más fluida que Excel.<br><span class="accent">Con la potencia de una base de datos.</span></h1>
+<p class="sub">Conservas tus hábitos de Excel, pero más simple y más rápido. Y detrás de cada tabla, una base SQLite real te abre lo que Excel no sabe hacer: consultas SQL, tablas dinámicas instantáneas, conexiones a tus bases, scripts Lua. Gratis, para todo el mundo.</p>
 <div class="ctas">
 <a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Descargar la beta</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Ver la demo</a>
@@ -90,7 +90,7 @@
 <span><svg class="ico"><use href="#i-heart"/></svg>100 % gratis</span>
 <span><svg class="ico"><use href="#i-lock"/></svg>Tus datos se quedan contigo</span>
 <span><svg class="ico"><use href="#i-grid"/></svg>Windows, macOS y Linux</span>
-<span><svg class="ico"><use href="#i-check"/></svg>Los hábitos de Excel</span>
+<span><svg class="ico"><use href="#i-check"/></svg>Más fluida que Excel</span>
 </div></div>
 
 <section id="comment"><div class="w">
@@ -123,7 +123,22 @@
 </div>
 </div></section>
 
-<section class="alt" id="demo"><div class="w">
+<section class="alt" id="ergonomie"><div class="w">
+<p class="kicker">Ergonomía</p>
+<h2>Más simple y más fluida que Excel</h2>
+<p class="lead">Los mismos gestos, menos pasos. Lattis se encarga de lo que Excel te deja hacer a mano.</p>
+<div class="ergo">
+<div class="erow head"><span></span><span class="ex">Excel</span><span class="el">Lattis</span></div>
+<div class="erow"><span class="ek">Crear una tabla</span><span class="ex" data-l="Excel">Dar formato como tabla, comprobar el rango, cambiarle el nombre</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Escribe tus datos: la tabla se detecta, se enmarca y se nombra sola</span></span></div>
+<div class="erow"><span class="ek">Buscar un valor</span><span class="ex" data-l="Excel"><code>=BUSCARV(A2;Clientes!A:D;3;FALSO)</code></span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span><code>=REFERENCE(Clientes; Ciudad; A2)</code>, legible y sin número de columna</span></span></div>
+<div class="erow"><span class="ek">Fórmula de columna</span><span class="ex" data-l="Excel">Copiarla hacia abajo y comprobar que sigue las filas nuevas</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Una columna calculada se aplica sola a todas las filas</span></span></div>
+<div class="erow"><span class="ek">Tipos de datos</span><span class="ex" data-l="Excel">Una fecha o un código pueden cambiar de formato sin avisar</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Cada columna tiene un tipo, detectado al escribir y modificable</span></span></div>
+<div class="erow"><span class="ek">Analizar</span><span class="ex" data-l="Excel">Tablas dinámicas que hay que actualizar a mano</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>SQL y tablas dinámicas instantáneas, al día en cuanto cambian los datos</span></span></div>
+<div class="erow"><span class="ek">Automatizar</span><span class="ex" data-l="Excel">Macros VBA que pueden bloquear el libro</span><span class="el"><svg class="ico"><use href="#i-check"/></svg><span>Scripts Lua con referencia integrada y protección contra bucles infinitos</span></span></div>
+</div>
+</div></section>
+
+<section id="demo"><div class="w">
 <p class="kicker">Demo</p>
 <h2>Mira Lattis en acción</h2>
 <p class="lead">Vídeos cortos para descubrir lo esencial. Llegarán con las primeras versiones públicas.</p>
@@ -139,10 +154,10 @@
 </div>
 </div></section>
 
-<section id="fonctions"><div class="w">
+<section class="alt" id="fonctions"><div class="w">
 <p class="kicker">Funciones</p>
-<h2>Todo lo necesario para analizar</h2>
-<p class="lead">Las funciones más usadas de Excel, impulsadas por SQLite.</p>
+<h2>Todo lo que Excel no hace</h2>
+<p class="lead">Cada tabla es una tabla SQLite real. Conservas la cuadrícula y ganas todo lo que una base de datos hace posible.</p>
 <div class="feats">
 <div class="feat"><svg class="fi"><use href="#i-grid"/></svg><h3>Lienzo infinito</h3><p>Varias tablas independientes por hoja, cada una enmarcada por un borde fino. Si una empieza en A1, la pestaña toma su nombre.</p></div>
 <div class="feat"><svg class="fi"><use href="#i-type"/></svg><h3>Columnas tipadas</h3><p>Texto, entero, decimal, fecha, booleano. El tipo se detecta mientras escribes, nunca te bloquea y siempre se puede cambiar.</p></div>
@@ -172,7 +187,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="connexions"><div class="w">
+<section id="connexions"><div class="w">
 <p class="kicker">Conexiones</p>
 <h2>Conectado a tus bases de datos</h2>
 <p class="lead">Importa y actualiza datos externos, al estilo de Power Query. Las contraseñas se quedan en el llavero de tu ordenador.</p>
@@ -184,7 +199,7 @@
 </div>
 </div></section>
 
-<section id="gratuit"><div class="w">
+<section class="alt" id="gratuit"><div class="w">
 <p class="kicker">Precio</p>
 <h2>Gratis. Para todo el mundo.</h2>
 <p class="lead">Sin versión Pro, sin suscripción, sin límite de filas. Lattis es gratis tanto para particulares como para empresas, y seguirá siéndolo.</p>
@@ -216,7 +231,7 @@
 </div>
 </div></section>
 
-<section class="alt" id="telecharger"><div class="w">
+<section id="telecharger"><div class="w">
 <p class="kicker">Descarga</p>
 <h2>Instala Lattis</h2>
 <p class="lead">El botón elige automáticamente el instalador adecuado para tu sistema a partir de la última versión publicada.</p>
@@ -230,7 +245,7 @@
 <p class="allrel"><a href="https://github.com/Be-Lattis/lattis-app/releases">Todas las versiones y notas de versión en GitHub</a><a id="dl-sums" hidden>Sumas de comprobación SHA-256</a></p>
 </div></section>
 
-<section id="faq"><div class="w narrow">
+<section class="alt" id="faq"><div class="w narrow">
 <h2>Preguntas frecuentes</h2>
 <details><summary>¿Lattis es realmente gratis?</summary><p>Sí. Todas las funciones son gratuitas, para uso personal y profesional, sin suscripción ni versión Pro. El proyecto se financia con donaciones de empresas, alianzas, formación y acompañamiento.</p></details>
 <details><summary>¿Dónde se guardan mis datos?</summary><p>En tu ordenador. Un libro es un archivo <code>.lattis</code> que contiene una base SQLite. Nada se envía a un servidor, salvo que tú conectes una base externa.</p></details>
@@ -242,7 +257,7 @@
 
 <section class="final"><div class="w">
 <img src="../assets/lattis-icone.svg" alt="" width="72" height="72">
-<h2>¿Listo para dar rigor a tus hojas de cálculo?</h2>
+<h2>¿Listo para una hoja de cálculo más fluida y más potente?</h2>
 <p>Prueba la beta y cuéntanos qué te parece en GitHub.</p>
 <div class="ctas"><a class="btn light" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg>Descargar la beta</a><a class="btn onvert" href="https://github.com/Be-Lattis/lattis-app"><svg class="ico"><use href="#i-gh"/></svg>Seguir Lattis en GitHub</a></div>
 </div></section>
