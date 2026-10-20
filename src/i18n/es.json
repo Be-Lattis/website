@@ -11,7 +11,7 @@
   "nav.cta": "GitHub",
   "hero.badge": "Beta pública disponible · Gratis para todos",
   "hero.title1": "Una hoja de cálculo más fluida que Excel.",
-  "hero.title2": "Con la potencia de una base de datos.",
+  "hero.title2": "Con la potencia<br class=\"hbr\">de una base de datos.",
   "hero.sub": "Conservas tus hábitos de Excel, pero más simple y más rápido. Y detrás de cada tabla, una base SQLite real te abre lo que Excel no sabe hacer: consultas SQL, tablas dinámicas instantáneas, conexiones a tus bases, trabajo en equipo en directo, scripts Lua. Gratis, para todo el mundo.",
   "hero.cta1": "Seguir el proyecto",
   "hero.cta2": "Ver la demo",

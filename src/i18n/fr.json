@@ -11,7 +11,7 @@
   "nav.cta": "GitHub",
   "hero.badge": "Bêta publique disponible · Gratuit pour tous",
   "hero.title1": "Un tableur plus fluide qu'Excel.",
-  "hero.title2": "Avec la puissance d'une base de données.",
+  "hero.title2": "Avec la puissance<br class=\"hbr\">d'une base de données.",
   "hero.sub": "Vous gardez vos réflexes d'Excel, en plus simple et plus rapide. Et derrière chaque tableau, une vraie base SQLite vous ouvre ce qu'Excel ne sait pas faire : requêtes SQL, tableaux croisés instantanés, connexions à vos bases, travail à plusieurs en direct, scripts Lua. Gratuit, pour tout le monde.",
   "hero.cta1": "Suivre le projet",
   "hero.cta2": "Voir la démo",

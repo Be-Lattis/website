@@ -11,7 +11,7 @@
   "nav.cta": "GitHub",
   "hero.badge": "Öffentliche Beta verfügbar · Kostenlos für alle",
   "hero.title1": "Flüssiger als Excel.",
-  "hero.title2": "Mit der Leistung einer Datenbank.",
+  "hero.title2": "Mit der Leistung<br class=\"hbr\">einer Datenbank.",
   "hero.sub": "Sie behalten Ihre Excel-Gewohnheiten, nur einfacher und schneller. Und hinter jeder Tabelle steckt eine echte SQLite-Datenbank, die kann, was Excel nicht kann: SQL-Abfragen, sofortige Pivot-Tabellen, Verbindungen zu Ihren Datenbanken, Zusammenarbeit in Echtzeit, Lua-Skripte. Kostenlos, für alle.",
   "hero.cta1": "Projekt verfolgen",
   "hero.cta2": "Demo ansehen",

@@ -11,7 +11,7 @@
   "nav.cta": "GitHub",
   "hero.badge": "Public beta available · Free for everyone",
   "hero.title1": "A spreadsheet smoother than Excel.",
-  "hero.title2": "With the power of a database.",
+  "hero.title2": "With the power<br class=\"hbr\">of a database.",
   "hero.sub": "Keep your Excel habits, only simpler and faster. And behind every table, a real SQLite database unlocks what Excel cannot do: SQL queries, instant pivot tables, connections to your databases, live teamwork, Lua scripts. Free, for everyone.",
   "hero.cta1": "Follow the project",
   "hero.cta2": "Watch the demo",
