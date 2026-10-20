@@ -12,7 +12,7 @@
   "hero.badge": "Public beta available · Free for everyone",
   "hero.title1": "A spreadsheet smoother than the competition.",
   "hero.title2": "With the power<br class=\"hbr\">of a database.",
-  "hero.sub": "Keep your spreadsheet habits, only simpler and faster. And behind every table, a real SQLite database unlocks what other spreadsheets cannot do: SQL queries, instant pivot tables, connections to your databases, live teamwork, Lua scripts. Free, for everyone.",
+  "hero.sub": "You keep your bearings, but everything is simpler and faster. Behind every table, a real SQL database so you get the full power of databases. And it's free!",
   "hero.cta1": "Follow the project",
   "hero.cta2": "Watch the demo",
   "hero.alt": "Screenshot of Lattis: several tables on a single sheet",

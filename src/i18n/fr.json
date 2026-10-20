@@ -12,7 +12,7 @@
   "hero.badge": "Bêta publique disponible · Gratuit pour tous",
   "hero.title1": "Un tableur plus fluide que la concurrence.",
   "hero.title2": "Avec la puissance<br class=\"hbr\">d'une base de données.",
-  "hero.sub": "Vous gardez vos réflexes de tableur, en plus simple et plus rapide. Et derrière chaque tableau, une vraie base SQLite vous ouvre ce que les autres tableurs ne savent pas faire : requêtes SQL, tableaux croisés instantanés, connexions à vos bases, travail à plusieurs en direct, scripts Lua. Gratuit, pour tout le monde.",
+  "hero.sub": "Vous gardez vos repères mais tout est plus simple et plus rapide. Derrière chaque tableau, une vraie base SQL pour profiter de la puissance des BDD. Mais gratuit !",
   "hero.cta1": "Suivre le projet",
   "hero.cta2": "Voir la démo",
   "hero.alt": "Capture de Lattis : plusieurs tableaux sur une même feuille",
