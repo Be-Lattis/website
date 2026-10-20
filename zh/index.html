@@ -69,7 +69,7 @@
 <div class="w">
 <span class="badge"><span class="dot"></span>公开测试版已发布 · 人人免费</span>
 <h1>比 Excel 更流畅的电子表格。<br><span class="accent">拥有数据库的强大能力。</span></h1>
-<p class="sub">保留您熟悉的 Excel 操作习惯，却更简单、更快速。每个表格背后都是真正的 SQLite 数据库，带来 Excel 做不到的能力：SQL 查询、即时数据透视表、连接您的数据库、Lua 脚本。人人免费。</p>
+<p class="sub">保留您熟悉的 Excel 操作习惯，却更简单、更快速。每个表格背后都是真正的 SQLite 数据库，带来 Excel 做不到的能力：SQL 查询、即时数据透视表、连接您的数据库、多人实时协作、Lua 脚本。人人免费。</p>
 <div class="ctas">
 <a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>下载测试版</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>观看演示</a>
@@ -189,13 +189,13 @@
 
 <section id="connexions"><div class="w">
 <p class="kicker">连接</p>
-<h2>连接您的数据库</h2>
+<h2>连接您的数据库，也连接您的团队</h2>
 <p class="lead">像 Power Query 一样导入并刷新外部数据。密码保存在您电脑的钥匙串中。</p>
 <div class="logos"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL Server</span><span>SQLite</span><span>REST / JSON</span><span>Parquet</span></div>
 <div class="feats three">
 <div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>关系型数据库</h3><p>PostgreSQL、MySQL 与 MariaDB、SQL Server、SQLite。</p></div>
 <div class="feat"><svg class="fi"><use href="#i-plug"/></svg><h3>API 与文件</h3><p>JSON REST API，Parquet 与 JSON 文件。</p></div>
-<div class="feat soon"><svg class="fi"><use href="#i-users"/></svg><h3>多人协作（研究中）</h3><p>基于 PostgreSQL 的「Lattis 服务器」，支持角色与权限。该功能仍在设计中，尚未提供。</p></div>
+<div class="feat"><svg class="fi"><use href="#i-users"/></svg><h3>多人协作</h3><p>自托管于 PostgreSQL 的 Lattis 服务器：多人实时编辑、角色与权限、离线工作、数据湖（Data Lake）以及浏览器内编辑。工作簿也可以通过网络文件夹或 NAS 共享。</p></div>
 </div>
 </div></section>
 
@@ -248,7 +248,7 @@
 <section class="alt" id="faq"><div class="w narrow">
 <h2>常见问题</h2>
 <details><summary>Lattis 真的免费吗？</summary><p>是的。所有功能均免费，个人和商业用途皆可，没有订阅，也没有专业版。项目依靠企业捐赠、合作伙伴、培训和企业服务维持。</p></details>
-<details><summary>我的数据存放在哪里？</summary><p>在您的电脑上。每个工作簿是一个包含 SQLite 数据库的 <code>.lattis</code> 文件。除非您主动连接外部数据库，否则不会有任何数据发送到服务器。</p></details>
+<details><summary>我的数据存放在哪里？</summary><p>在您的电脑上。每个工作簿是一个包含 SQLite 数据库的 <code>.lattis</code> 文件。除非您主动连接外部数据库或自己的 Lattis 服务器，否则不会有任何数据发送到服务器。</p></details>
 <details><summary>我还能沿用 Excel 的习惯吗？</summary><p>可以：功能区、右键菜单、快捷键、撤销与重做、熟悉的公式。VLOOKUP 甚至会自动转换为 REFERENCE。</p></details>
 <details><summary>Lattis 支持哪些系统？</summary><p>Windows、macOS 和 Linux。它是用 Go、Wails 和 SvelteKit 构建的原生应用，没有 Electron 的臃肿。</p></details>
 <details><summary>什么时候可以试用？</summary><p>现在就可以：首个测试版已支持 Windows、macOS 和 Linux。下载按钮会自动为您的系统获取最新版本。</p></details>

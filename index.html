@@ -69,7 +69,7 @@
 <div class="w">
 <span class="badge"><span class="dot"></span>Bêta publique disponible · Gratuit pour tous</span>
 <h1>Un tableur plus fluide qu'Excel.<br><span class="accent">Avec la puissance d'une base de données.</span></h1>
-<p class="sub">Vous gardez vos réflexes d'Excel, en plus simple et plus rapide. Et derrière chaque tableau, une vraie base SQLite vous ouvre ce qu'Excel ne sait pas faire : requêtes SQL, tableaux croisés instantanés, connexions à vos bases, scripts Lua. Gratuit, pour tout le monde.</p>
+<p class="sub">Vous gardez vos réflexes d'Excel, en plus simple et plus rapide. Et derrière chaque tableau, une vraie base SQLite vous ouvre ce qu'Excel ne sait pas faire : requêtes SQL, tableaux croisés instantanés, connexions à vos bases, travail à plusieurs en direct, scripts Lua. Gratuit, pour tout le monde.</p>
 <div class="ctas">
 <a class="btn" id="dl-hero" href="#telecharger"><svg class="ico"><use href="#i-down"/></svg><span>Télécharger la bêta</span></a>
 <a class="btn ghost" href="#demo"><svg class="ico"><use href="#i-play"/></svg>Voir la démo</a>
@@ -189,13 +189,13 @@
 
 <section id="connexions"><div class="w">
 <p class="kicker">Connexions</p>
-<h2>Connecté à vos bases</h2>
+<h2>Connecté à vos bases et à votre équipe</h2>
 <p class="lead">Importez et rafraîchissez des données externes, à la manière de Power Query. Les mots de passe restent dans le trousseau de votre ordinateur.</p>
 <div class="logos"><span>PostgreSQL</span><span>MySQL</span><span>MariaDB</span><span>SQL Server</span><span>SQLite</span><span>REST / JSON</span><span>Parquet</span></div>
 <div class="feats three">
 <div class="feat"><svg class="fi"><use href="#i-db"/></svg><h3>Bases relationnelles</h3><p>PostgreSQL, MySQL et MariaDB, SQL Server, SQLite.</p></div>
 <div class="feat"><svg class="fi"><use href="#i-plug"/></svg><h3>API et fichiers</h3><p>API REST en JSON, fichiers Parquet et JSON.</p></div>
-<div class="feat soon"><svg class="fi"><use href="#i-users"/></svg><h3>Travail à plusieurs (à l'étude)</h3><p>Un « Serveur Lattis » sur PostgreSQL, avec des rôles et des droits. Cette fonction est en conception et n'est pas encore disponible.</p></div>
+<div class="feat"><svg class="fi"><use href="#i-users"/></svg><h3>Travail à plusieurs</h3><p>Le Serveur Lattis, auto-hébergé sur PostgreSQL : édition à plusieurs en direct, rôles et droits, travail hors ligne, Data Lake et édition depuis le navigateur. Un classeur peut aussi se partager sur un dossier réseau ou un NAS.</p></div>
 </div>
 </div></section>
 
@@ -248,7 +248,7 @@
 <section class="alt" id="faq"><div class="w narrow">
 <h2>Questions fréquentes</h2>
 <details><summary>Lattis est-il vraiment gratuit ?</summary><p>Oui. Toutes les fonctions sont gratuites, pour un usage personnel comme professionnel, sans abonnement ni version Pro. Le projet vit grâce aux dons d'entreprises, aux partenariats, aux formations et à l'accompagnement.</p></details>
-<details><summary>Où sont stockées mes données ?</summary><p>Sur votre ordinateur. Un classeur est un fichier <code>.lattis</code> qui contient une base SQLite. Rien ne part sur un serveur, sauf si vous connectez vous-même une base externe.</p></details>
+<details><summary>Où sont stockées mes données ?</summary><p>Sur votre ordinateur. Un classeur est un fichier <code>.lattis</code> qui contient une base SQLite. Rien ne part sur un serveur, sauf si vous connectez vous-même une base externe ou votre propre Serveur Lattis.</p></details>
 <details><summary>Est-ce que je retrouve mes habitudes d'Excel ?</summary><p>Oui : ruban, menus contextuels, raccourcis, annuler et rétablir, formules familières. RECHERCHEV est même convertie automatiquement en REFERENCE.</p></details>
 <details><summary>Sur quels systèmes fonctionne Lattis ?</summary><p>Windows, macOS et Linux. C'est une application native construite en Go avec Wails et SvelteKit, sans la lourdeur d'Electron.</p></details>
 <details><summary>Quand puis-je l'essayer ?</summary><p>Dès maintenant : une première bêta est disponible pour Windows, macOS et Linux. Le bouton Télécharger récupère automatiquement la version la plus récente pour votre système.</p></details>
