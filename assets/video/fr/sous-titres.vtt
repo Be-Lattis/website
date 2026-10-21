@@ -20,124 +20,133 @@ en fait une vraie table SQL.
 Et la feuille n'a pas de limite de taille.
 
 5
-00:00:20.638 --> 00:00:23.598
+00:00:20.638 --> 00:00:23.708
+Plusieurs feuilles qui se ressemblent,
+une par mois par exemple ?
+
+6
+00:00:23.758 --> 00:00:26.318
+Lattis les regroupe en un seul onglet.
+
+7
+00:00:28.170 --> 00:00:31.130
 Les formules utilisent
 le nom de vos colonnes,
 
-6
-00:00:24.371 --> 00:00:28.771
+8
+00:00:31.903 --> 00:00:36.303
 et vont chercher une valeur dans un
 autre tableau sans risque de décalage.
 
-7
-00:00:30.971 --> 00:00:33.531
+9
+00:00:38.503 --> 00:00:41.063
 Tableau croisé, graphique ;
 
-8
-00:00:37.000 --> 00:00:41.270
+10
+00:00:44.532 --> 00:00:48.802
 une formule posée à côté d'un tableau croisé
 dynamique devient une colonne calculée
 
-9
-00:00:41.320 --> 00:00:42.760
+11
+00:00:48.852 --> 00:00:50.292
 qui le suit.
 
-10
-00:00:43.129 --> 00:00:45.209
+12
+00:00:50.661 --> 00:00:52.741
 Et tout suit vos données.
 
-11
-00:00:48.283 --> 00:00:49.566
+13
+00:00:55.815 --> 00:00:57.098
 Envie d'aller plus loin ?
 
-12
-00:00:49.616 --> 00:00:53.163
+14
+00:00:57.148 --> 00:01:00.695
 L'onglet SQL interroge vos
 tableaux par leur nom.
 
-13
-00:00:57.216 --> 00:01:00.416
+15
+00:01:04.749 --> 00:01:07.949
 Et pour automatiser, il
 y a les scripts Lua.
 
-14
-00:01:01.785 --> 00:01:03.148
+16
+00:01:09.317 --> 00:01:10.680
 Vos données sont ailleurs ?
 
-15
-00:01:03.198 --> 00:01:05.695
+17
+00:01:10.730 --> 00:01:13.227
 Lattis se connecte à
 vos bases et à vos API,
 
-16
-00:01:05.745 --> 00:01:09.145
+18
+00:01:13.277 --> 00:01:16.677
 et rejoue vos étapes de nettoyage
 à chaque actualisation.
 
-17
-00:01:18.620 --> 00:01:20.730
+19
+00:01:26.152 --> 00:01:28.262
 Il peut aussi se brancher
 sur vos outils d'IA,
 
-18
-00:01:20.780 --> 00:01:22.300
+20
+00:01:28.312 --> 00:01:29.832
 si vous le souhaitez.
 
-19
-00:01:24.354 --> 00:01:26.424
+21
+00:01:31.886 --> 00:01:33.956
 Seul, tout tient dans un fichier.
 
-20
-00:01:26.474 --> 00:01:30.994
+22
+00:01:34.006 --> 00:01:38.526
 À plusieurs, il y a le Serveur Lattis,
 que chacun peut héberger où il veut.
 
-21
-00:01:34.440 --> 00:01:37.560
+23
+00:01:41.973 --> 00:01:45.093
 Il partage vos classeurs
 avec des droits par tableau,
 
-22
-00:01:42.760 --> 00:01:46.550
+24
+00:01:50.292 --> 00:01:54.082
 et l'on travaille en ligne depuis
 l'application ou un simple navigateur,
 
-23
-00:01:46.600 --> 00:01:48.200
+25
+00:01:54.132 --> 00:01:55.732
 sans rien installer.
 
-24
-00:01:51.926 --> 00:01:56.063
+26
+00:01:59.458 --> 00:02:03.595
 Et sur un serveur, un tableau devient
 aussi un formulaire à remplir en ligne :
 
-25
-00:01:56.113 --> 00:01:58.966
+27
+00:02:03.645 --> 00:02:06.498
 chaque réponse arrive
 comme une nouvelle ligne.
 
-26
-00:02:07.214 --> 00:02:10.657
+28
+00:02:14.746 --> 00:02:18.189
 Lattis est gratuit et open
 source : son code est public,
 
-27
-00:02:10.707 --> 00:02:13.214
+29
+00:02:18.239 --> 00:02:20.746
 chacun peut le lire et l'améliorer.
 
-28
-00:02:13.578 --> 00:02:15.578
+30
+00:02:21.110 --> 00:02:23.110
 Il existe en cinq langues,
 
-29
-00:02:16.178 --> 00:02:19.378
+31
+00:02:23.710 --> 00:02:26.910
 sur Windows, macOS et Linux.
 
-30
-00:02:19.826 --> 00:02:22.296
+32
+00:02:27.358 --> 00:02:29.828
 Lattis vous apporte la
 souplesse du tableur,
 
-31
-00:02:22.346 --> 00:02:24.706
+33
+00:02:29.878 --> 00:02:32.238
 avec la puissance d'une base de données.
