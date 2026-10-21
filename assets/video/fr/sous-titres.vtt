@@ -1,0 +1,143 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:05.390
+Voici Lattis, un tableur où chaque tableau
+est aussi une vraie base de données.
+
+2
+00:00:06.850 --> 00:00:09.000
+Vous saisissez vos
+données comme d'habitude.
+
+3
+00:00:09.050 --> 00:00:13.090
+Lattis reconnaît le tableau et
+en fait une vraie table SQL.
+
+4
+00:00:16.183 --> 00:00:18.903
+Et la feuille n'a pas de limite de taille.
+
+5
+00:00:20.638 --> 00:00:23.598
+Les formules utilisent
+le nom de vos colonnes,
+
+6
+00:00:24.371 --> 00:00:28.771
+et vont chercher une valeur dans un
+autre tableau sans risque de décalage.
+
+7
+00:00:30.971 --> 00:00:33.531
+Tableau croisé, graphique ;
+
+8
+00:00:37.000 --> 00:00:41.270
+une formule posée à côté d'un tableau croisé
+dynamique devient une colonne calculée
+
+9
+00:00:41.320 --> 00:00:42.760
+qui le suit.
+
+10
+00:00:43.129 --> 00:00:45.209
+Et tout suit vos données.
+
+11
+00:00:48.283 --> 00:00:49.566
+Envie d'aller plus loin ?
+
+12
+00:00:49.616 --> 00:00:53.163
+L'onglet SQL interroge vos
+tableaux par leur nom.
+
+13
+00:00:57.216 --> 00:01:00.416
+Et pour automatiser, il
+y a les scripts Lua.
+
+14
+00:01:01.785 --> 00:01:03.148
+Vos données sont ailleurs ?
+
+15
+00:01:03.198 --> 00:01:05.695
+Lattis se connecte à
+vos bases et à vos API,
+
+16
+00:01:05.745 --> 00:01:09.145
+et rejoue vos étapes de nettoyage
+à chaque actualisation.
+
+17
+00:01:18.620 --> 00:01:20.730
+Il peut aussi se brancher
+sur vos outils d'IA,
+
+18
+00:01:20.780 --> 00:01:22.300
+si vous le souhaitez.
+
+19
+00:01:24.354 --> 00:01:26.424
+Seul, tout tient dans un fichier.
+
+20
+00:01:26.474 --> 00:01:30.994
+À plusieurs, il y a le Serveur Lattis,
+que chacun peut héberger où il veut.
+
+21
+00:01:34.440 --> 00:01:37.560
+Il partage vos classeurs
+avec des droits par tableau,
+
+22
+00:01:42.760 --> 00:01:46.550
+et l'on travaille en ligne depuis
+l'application ou un simple navigateur,
+
+23
+00:01:46.600 --> 00:01:48.200
+sans rien installer.
+
+24
+00:01:51.926 --> 00:01:56.063
+Et sur un serveur, un tableau devient
+aussi un formulaire à remplir en ligne :
+
+25
+00:01:56.113 --> 00:01:58.966
+chaque réponse arrive
+comme une nouvelle ligne.
+
+26
+00:02:07.214 --> 00:02:10.657
+Lattis est gratuit et open
+source : son code est public,
+
+27
+00:02:10.707 --> 00:02:13.214
+chacun peut le lire et l'améliorer.
+
+28
+00:02:13.578 --> 00:02:15.578
+Il existe en cinq langues,
+
+29
+00:02:16.178 --> 00:02:19.378
+sur Windows, macOS et Linux.
+
+30
+00:02:19.826 --> 00:02:22.296
+Lattis vous apporte la
+souplesse du tableur,
+
+31
+00:02:22.346 --> 00:02:24.706
+avec la puissance d'une base de données.

@@ -8,7 +8,7 @@ Le site existe en cinq langues : français (racine), anglais (`en/`), chinois (`
 - les textes sont dans `src/i18n/<langue>.json` (toutes les langues ont les mêmes clés) ;
 - `node src/build.mjs` régénère les cinq pages, à lancer puis committer après chaque modification.
 
-Les vidéos de démonstration sont pour l'instant des emplacements réservés (`.video` dans le gabarit).
+La vidéo « Lattis en 2 minutes » est dans `assets/video/<langue>/` (`lattis-2-minutes.mp4` en 720p, `poster.jpg`, `sous-titres.vtt`) : une page prend la vidéo de sa langue si elle existe, sinon l'anglaise. Pour en ajouter une, déposer ces trois fichiers et ajouter la langue à `videoLangs` dans `src/build.mjs`. Les autres vidéos sont encore des emplacements réservés (`.video` dans le gabarit).
 
 ## Licences
 
