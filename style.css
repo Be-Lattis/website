@@ -115,6 +115,8 @@ h3{letter-spacing:-.01em}
 .video strong{font-size:18px}
 .video em{font-style:normal;font-size:13px;opacity:.8}
 .video.main{max-width:960px;margin:0 auto}
+.video.has-video{display:block;background:#0f3a22}
+.video video{display:block;width:100%;height:100%;object-fit:contain;background:#0f3a22}
 .video.main .play{width:84px;height:84px}
 .video.main strong{font-size:24px}
 .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:22px auto 0;max-width:960px}

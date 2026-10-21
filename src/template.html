@@ -138,10 +138,11 @@
 <p class="kicker">{{video.kicker}}</p>
 <h2>{{video.title}}</h2>
 <p class="lead">{{video.sub}}</p>
-<div class="video main" role="img" aria-label="{{video.main}} ({{video.soon}})">
-<div class="vgrid" aria-hidden="true"></div>
-<span class="play"><svg><use href="#i-play"/></svg></span>
-<strong>{{video.main}}</strong><em>{{video.soon}}</em>
+<div class="video main has-video">
+<video controls preload="none" playsinline poster="{{base}}{{videoDir}}poster.jpg" aria-label="{{video.main}}">
+<source src="{{base}}{{videoDir}}lattis-2-minutes.mp4" type="video/mp4">
+<track kind="subtitles" srclang="{{videoLang}}" label="{{videoLangName}}" src="{{base}}{{videoDir}}sous-titres.vtt">
+</video>
 </div>
 <div class="vids">
 <div class="video" role="img" aria-label="{{video.v1}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{video.v1}}</strong><em>{{video.soon}}</em></div>

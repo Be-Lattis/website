@@ -1,0 +1,131 @@
+WEBVTT
+
+1
+00:00:00.400 --> 00:00:05.650
+This is Lattis, a spreadsheet where
+every table is also a real database.
+
+2
+00:00:06.900 --> 00:00:08.925
+You type your data as usual.
+
+3
+00:00:08.975 --> 00:00:14.200
+Lattis recognizes the table and
+turns it into a real SQL table.
+
+4
+00:00:16.233 --> 00:00:18.733
+And the sheet has no size limit.
+
+5
+00:00:20.688 --> 00:00:23.613
+Formulas use the names of your columns,
+
+6
+00:00:24.421 --> 00:00:28.971
+and look up a value in another
+table, with no risk of misalignment.
+
+7
+00:00:30.971 --> 00:00:33.271
+A pivot table, a chart;
+
+8
+00:00:37.000 --> 00:00:42.950
+a formula placed next to a pivot table
+becomes a calculated column that follows it.
+
+9
+00:00:43.441 --> 00:00:45.891
+And everything follows your data.
+
+10
+00:00:48.594 --> 00:00:49.819
+Want to go further?
+
+11
+00:00:49.869 --> 00:00:53.219
+The SQL tab queries your tables by name.
+
+12
+00:00:57.528 --> 00:01:00.203
+And to automate, there are Lua scripts.
+
+13
+00:01:02.028 --> 00:01:03.903
+Is your data somewhere else?
+
+14
+00:01:03.953 --> 00:01:07.303
+Lattis connects to your
+databases and your APIs,
+
+15
+00:01:07.353 --> 00:01:10.753
+and replays your cleanup
+steps on every refresh.
+
+16
+00:01:18.862 --> 00:01:22.437
+It can also plug into your
+AI tools, if you wish.
+
+17
+00:01:24.596 --> 00:01:27.571
+On your own, everything
+fits in a single file.
+
+18
+00:01:27.621 --> 00:01:32.721
+As a team, there is Lattis Server, which
+anyone can host wherever they like.
+
+19
+00:01:34.683 --> 00:01:38.208
+It shares your workbooks with
+permissions for each table,
+
+20
+00:01:43.002 --> 00:01:46.527
+and you work online from the app,
+or from a simple web browser,
+
+21
+00:01:46.577 --> 00:01:48.652
+with nothing to install.
+
+22
+00:01:52.168 --> 00:01:56.393
+And on a server, a table can also
+become a form to fill in online:
+
+23
+00:01:56.443 --> 00:01:59.218
+each answer arrives as a new row.
+
+24
+00:02:07.457 --> 00:02:11.107
+Lattis is free and open
+source: its code is public,
+
+25
+00:02:11.157 --> 00:02:13.807
+so anyone can read it and improve it.
+
+26
+00:02:14.291 --> 00:02:16.641
+It comes in five languages,
+
+27
+00:02:17.128 --> 00:02:19.978
+on Windows, macOS and Linux.
+
+28
+00:02:20.462 --> 00:02:23.237
+Lattis gives you the
+flexibility of a spreadsheet,
+
+29
+00:02:23.287 --> 00:02:25.637
+with the power of a database.
