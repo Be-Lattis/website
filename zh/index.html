@@ -143,11 +143,11 @@
 <p class="kicker">演示</p>
 <h2>看看 Lattis 如何工作</h2>
 <p class="lead">用几段短视频了解核心功能。视频将随首批公开版本一同发布。</p>
-<div class="video main has-video">
-<video controls preload="none" playsinline poster="../assets/video/en/poster.jpg" aria-label="两分钟了解 Lattis">
-<source src="../assets/video/en/lattis-2-minutes.mp4" type="video/mp4">
-<track kind="subtitles" srclang="en" label="English" src="../assets/video/en/sous-titres.vtt">
-</video>
+<div class="video main has-video yt" data-yt="8Ql5Kieguu8">
+<a class="ytbtn" href="https://youtu.be/8Ql5Kieguu8" aria-label="两分钟了解 Lattis (YouTube)">
+<img src="../assets/video/en/poster.jpg" alt="" loading="lazy" width="1280" height="720">
+<span class="play"><svg><use href="#i-play"/></svg></span>
+</a>
 </div>
 <div class="vids">
 <div class="video" role="img" aria-label="快速入门 (视频即将上线)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>快速入门</strong><em>视频即将上线</em></div>
@@ -325,5 +325,6 @@
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
 <script>window.LATTIS_DL={for:"下载 {os} 测试版",version:"版本：",soon:"目前尚未发布任何版本。首个版本即将推出，关注 GitHub 仓库即可获得通知。",error:"暂时无法连接 GitHub。您仍可在版本发布页面获取文件。",none:"在 GitHub 上查看",beta:"测试版",portable:"便携版"};</script>
 <script src="../download.js" defer></script>
+<script>document.querySelectorAll('.yt').forEach(function(v){v.querySelector('a').addEventListener('click',function(e){e.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0&hl=zh-Hans&cc_lang_pref=zh-Hans';f.title=this.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;v.innerHTML='';v.appendChild(f)})});</script>
 </body>
 </html>

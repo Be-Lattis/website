@@ -138,11 +138,11 @@
 <p class="kicker">{{video.kicker}}</p>
 <h2>{{video.title}}</h2>
 <p class="lead">{{video.sub}}</p>
-<div class="video main has-video">
-<video controls preload="none" playsinline poster="{{base}}{{videoDir}}poster.jpg" aria-label="{{video.main}}">
-<source src="{{base}}{{videoDir}}lattis-2-minutes.mp4" type="video/mp4">
-<track kind="subtitles" srclang="{{videoLang}}" label="{{videoLangName}}" src="{{base}}{{videoDir}}sous-titres.vtt">
-</video>
+<div class="video main has-video yt" data-yt="8Ql5Kieguu8">
+<a class="ytbtn" href="https://youtu.be/8Ql5Kieguu8" aria-label="{{video.main}} (YouTube)">
+<img src="{{base}}{{videoDir}}poster.jpg" alt="" loading="lazy" width="1280" height="720">
+<span class="play"><svg><use href="#i-play"/></svg></span>
+</a>
 </div>
 <div class="vids">
 <div class="video" role="img" aria-label="{{video.v1}} ({{video.soon}})"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>{{video.v1}}</strong><em>{{video.soon}}</em></div>
@@ -320,5 +320,6 @@
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
 <script>window.LATTIS_DL={for:"{{dl.for}}",version:"{{dl.version}}",soon:"{{dl.soon}}",error:"{{dl.error}}",none:"{{dl.none}}",beta:"{{dl.beta}}",portable:"{{dl.portable}}"};</script>
 <script src="{{base}}download.js" defer></script>
+<script>document.querySelectorAll('.yt').forEach(function(v){v.querySelector('a').addEventListener('click',function(e){e.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0&hl={{lang}}&cc_lang_pref={{lang}}';f.title=this.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;v.innerHTML='';v.appendChild(f)})});</script>
 </body>
 </html>

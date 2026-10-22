@@ -143,11 +143,11 @@
 <p class="kicker">Demo</p>
 <h2>Lattis in Aktion</h2>
 <p class="lead">Kurze Videos zu den wichtigsten Funktionen. Sie erscheinen mit den ersten öffentlichen Versionen.</p>
-<div class="video main has-video">
-<video controls preload="none" playsinline poster="../assets/video/en/poster.jpg" aria-label="Lattis in 2 Minuten">
-<source src="../assets/video/en/lattis-2-minutes.mp4" type="video/mp4">
-<track kind="subtitles" srclang="en" label="English" src="../assets/video/en/sous-titres.vtt">
-</video>
+<div class="video main has-video yt" data-yt="8Ql5Kieguu8">
+<a class="ytbtn" href="https://youtu.be/8Ql5Kieguu8" aria-label="Lattis in 2 Minuten (YouTube)">
+<img src="../assets/video/en/poster.jpg" alt="" loading="lazy" width="1280" height="720">
+<span class="play"><svg><use href="#i-play"/></svg></span>
+</a>
 </div>
 <div class="vids">
 <div class="video" role="img" aria-label="Erste Schritte (Video folgt in Kürze)"><div class="vgrid" aria-hidden="true"></div><span class="play"><svg><use href="#i-play"/></svg></span><strong>Erste Schritte</strong><em>Video folgt in Kürze</em></div>
@@ -325,5 +325,6 @@
 <script>document.querySelectorAll('[data-lang]').forEach(function(a){a.addEventListener('click',function(){try{localStorage.setItem('lattis-lang',a.dataset.lang)}catch(e){}})});document.addEventListener('click',function(e){var l=document.querySelector('.lang');if(l&&l.open&&!l.contains(e.target))l.open=false});</script>
 <script>window.LATTIS_DL={for:"Beta für {os} herunterladen",version:"Version:",soon:"Noch keine Version veröffentlicht. Die erste folgt in Kürze: Folgen Sie dem GitHub-Repository, um benachrichtigt zu werden.",error:"GitHub ist gerade nicht erreichbar. Die Dateien bleiben auf der Versionsseite verfügbar.",none:"Auf GitHub ansehen",beta:"Beta",portable:"Portabel"};</script>
 <script src="../download.js" defer></script>
+<script>document.querySelectorAll('.yt').forEach(function(v){v.querySelector('a').addEventListener('click',function(e){e.preventDefault();var f=document.createElement('iframe');f.src='https://www.youtube-nocookie.com/embed/'+v.dataset.yt+'?autoplay=1&rel=0&hl=de&cc_lang_pref=de';f.title=this.getAttribute('aria-label');f.allow='autoplay; encrypted-media; picture-in-picture; fullscreen';f.allowFullscreen=true;v.innerHTML='';v.appendChild(f)})});</script>
 </body>
 </html>
