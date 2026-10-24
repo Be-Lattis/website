@@ -210,5 +210,6 @@
   "arch.lattisdSub": "sign-in · administration",
   "ergo.7k": "One sheet per year",
   "ergo.7x": "Identical copied sheets, updated one by one",
-  "ergo.7l": "Similar sheets are grouped into one, with a “2026 ▾” selector; the tables follow it"
+  "ergo.7l": "Similar sheets are grouped into one, with a “2026 ▾” selector; the tables follow it",
+  "foot.stats": "Anonymous, cookie-free audience measurement."
 }

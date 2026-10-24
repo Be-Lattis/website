@@ -210,5 +210,6 @@
   "arch.lattisdSub": "Anmeldung · Verwaltung",
   "ergo.7k": "Ein Blatt pro Jahr",
   "ergo.7x": "Identisch kopierte Blätter, die man einzeln pflegen muss",
-  "ergo.7l": "Ähnliche Blätter werden zu einem zusammengefasst, mit einer Auswahl „2026 ▾“; die Tabellen folgen ihr"
+  "ergo.7l": "Ähnliche Blätter werden zu einem zusammengefasst, mit einer Auswahl „2026 ▾“; die Tabellen folgen ihr",
+  "foot.stats": "Anonyme Reichweitenmessung ohne Cookies."
 }

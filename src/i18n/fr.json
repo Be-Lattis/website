@@ -210,5 +210,6 @@
   "arch.lattisdSub": "connexion · administration",
   "ergo.7k": "Un onglet par année",
   "ergo.7x": "Des onglets copiés à l'identique, à tenir à jour un par un",
-  "ergo.7l": "Les onglets semblables se regroupent en un seul, avec un sélecteur « 2026 ▾ » ; les tableaux suivent"
+  "ergo.7l": "Les onglets semblables se regroupent en un seul, avec un sélecteur « 2026 ▾ » ; les tableaux suivent",
+  "foot.stats": "Mesure d'audience anonyme, sans cookie."
 }

@@ -210,5 +210,6 @@
   "arch.lattisdSub": "inicio de sesión · administración",
   "ergo.7k": "Una hoja por año",
   "ergo.7x": "Hojas copiadas idénticas, que hay que actualizar una a una",
-  "ergo.7l": "Las hojas parecidas se agrupan en una sola, con un selector «2026 ▾»; las tablas lo siguen"
+  "ergo.7l": "Las hojas parecidas se agrupan en una sola, con un selector «2026 ▾»; las tablas lo siguen",
+  "foot.stats": "Medición de audiencia anónima, sin cookies."
 }
